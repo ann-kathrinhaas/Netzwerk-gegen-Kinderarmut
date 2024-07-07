@@ -43,14 +43,37 @@ $font-source-sans: 'Source Sans 3', sans-serif;
 body {
     color: $black;
         
-        h2 {
+        h2, h3, h4 {
             font-family: $font-montserrat;
+        }
+
+        h2 {
             font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .semibold {
+            font-weight: 600;
         }
 
         p {
             font-family: $font-source-sans; 
             font-size: 1rem;
+        }
+
+        a:hover {
+            cursor: pointer;
         }
 
     .module-wrapper {
@@ -74,6 +97,16 @@ body {
 
             .content {
                 background: $orange-gradient;
+            }
+        }
+
+        &.freizeit {
+            .stoerer {
+                background: $blue;
+            }
+
+            .content {
+                background: $blue-gradient;
             }
         }
 
@@ -103,7 +136,7 @@ body {
                     
                     
                     .item {
-                       height: 5rem;
+                       height: 4rem;
                        width: auto;  
                     }
                 }
@@ -140,6 +173,10 @@ body {
                             background: $orange;
                         }
 
+                        &.line-freizeit {
+                            background: $blue;
+                        }
+
                         &.line-kleidung {
                             background: $green;
                         }
@@ -149,6 +186,37 @@ body {
                 }
             }
 
+            .sport, .kultur, .veranstaltungen {
+                .heading-with-marker {
+                    margin-top: 5rem;
+                    margin-bottom: -1rem;
+                }
+
+                .alle-angebote{
+                    padding-left: 1.75rem;
+                } 
+
+                .alle-angebote:hover {
+                    .blue {
+                        color: $blue;
+                    }
+
+                    .arrow-icon {
+                        content: url("/assets/icons/ic_arrow-right-blue.svg");
+                    }
+                }
+            }
+
+            .heading-with-marker {
+                .line-marker {
+                    width: 0.75rem;
+                    height: 2rem;
+                    background: $blue;
+                    margin-right: 1rem;
+                }
+
+               
+            }
         }
     }
 }

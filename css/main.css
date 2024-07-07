@@ -10,7 +10,7 @@
 @font-face {
   font-family: "Source Sans 3";
   src: url("font/SourceSans3/SourceSans3-SemiBold.ttf") format("truetype");
-  font-weight: 600; /* Adjust weight as needed */
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
@@ -19,11 +19,12 @@
   font-weight: normal;
   font-style: normal;
 }
-p {
-  font-family: "Source Sans 3", sans-serif; /* Beispielhafte Verwendung von Montserrat */
+body {
+  background: #FF7388;
 }
 
-h1, h2, h3 {
-  font-family: "Montserrat", sans-serif; /* Beispielhafte Verwendung von Source Sans 3 */
+.accordion {
+  background: #FF7388;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */

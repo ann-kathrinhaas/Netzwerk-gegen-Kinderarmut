@@ -19,4 +19,59 @@
   font-weight: normal;
   font-style: normal;
 }
-/*# sourceMappingURL=main.css.map */
+body {
+  color: #000000;
+}
+body h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+}
+body p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1rem;
+}
+body .module-wrapper {
+  width: 80vw;
+  margin: auto;
+}
+body .module-wrapper.hilfe-und-beratung .stoerer {
+  background: #FF7388;
+}
+body .module-wrapper.hilfe-und-beratung .content {
+  background: linear-gradient(to bottom, #FFCDD1 0%, #F07B84 100%);
+}
+body .module-wrapper .module.stoerer, body .module-wrapper .module.content {
+  padding: 2.5rem 7rem;
+}
+body .module-wrapper .module .flex-module {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+}
+body .module-wrapper .module .flex-module.items {
+  justify-content: space-evenly;
+}
+body .module-wrapper .module .flex-module.icon-with-heading {
+  justify-content: flex-start;
+  gap: 1rem;
+}
+body .module-wrapper .module .flex-module.icon-with-heading .icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+body .module-wrapper .module .flex-module.icon-with-heading h2 {
+  position: relative;
+  display: inline-block;
+  padding: 0 5px;
+  z-index: 0;
+}
+body .module-wrapper .module .flex-module.icon-with-heading h2 > div {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #FF7388;
+  z-index: -1;
+}/*# sourceMappingURL=main.css.map */

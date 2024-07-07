@@ -77,6 +77,16 @@ body {
             }
         }
 
+        &.kleidung {
+            .stoerer {
+                background: $green;
+            }
+
+            .content {
+                background: $green-gradient;
+            }
+        }
+
         .module {
             &.stoerer, &.content {
                 padding: 2.5rem 7rem;
@@ -130,6 +140,9 @@ body {
                             background: $orange;
                         }
 
+                        &.line-kleidung {
+                            background: $green;
+                        }
 
                       }
                     

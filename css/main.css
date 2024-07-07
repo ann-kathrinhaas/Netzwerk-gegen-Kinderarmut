@@ -46,6 +46,12 @@ body .module-wrapper.essen .stoerer {
 body .module-wrapper.essen .content {
   background: linear-gradient(to bottom, #FFDEAC 0%, #FFBE5E 100%);
 }
+body .module-wrapper.kleidung .stoerer {
+  background: #34B6A2;
+}
+body .module-wrapper.kleidung .content {
+  background: linear-gradient(to bottom, #C6FBFF 0%, #8FD9CC 100%);
+}
 body .module-wrapper .module.stoerer, body .module-wrapper .module.content {
   padding: 2.5rem 7rem;
 }
@@ -89,4 +95,7 @@ body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-hilf
 }
 body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-essen {
   background: #FEA623;
+}
+body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-kleidung {
+  background: #34B6A2;
 }/*# sourceMappingURL=main.css.map */

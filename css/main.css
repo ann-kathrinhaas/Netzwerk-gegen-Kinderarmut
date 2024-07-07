@@ -1,3 +1,29 @@
 /* COLORS */
 /* GRADIENTS */
+/* FONTS */
+@font-face {
+  font-family: "Montserrat";
+  src: url("font/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("font/SourceSans3/SourceSans3-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* Adjust weight as needed */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("font/SourceSans3/SourceSans3-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+p {
+  font-family: "Source Sans 3", sans-serif; /* Beispielhafte Verwendung von Montserrat */
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif; /* Beispielhafte Verwendung von Source Sans 3 */
+}
 /*# sourceMappingURL=main.css.map */

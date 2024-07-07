@@ -13,3 +13,36 @@ $orange-gradient: linear-gradient(to bottom, #FFDEAC 0%, #FFBE5E 100%);
 $blue-gradient: linear-gradient(to bottom, #CEE9FC 0%, #8FC5D9 100%);
 $green-gradient: linear-gradient(to bottom, #C6FBFF 0%, #8FD9CC 100%);
 $purple-gradient: linear-gradient(to bottom, #E6DCF7 0%, #C8CBEC 100%);
+
+/* FONTS */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('font/SourceSans3/SourceSans3-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* Adjust weight as needed */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('font/SourceSans3/SourceSans3-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-montserrat: 'Montserrat', sans-serif;
+$font-source-sans: 'Source Sans 3', sans-serif;
+
+p {
+    font-family: $font-source-sans; /* Beispielhafte Verwendung von Montserrat */
+}
+
+h1, h2, h3 {
+    font-family: $font-montserrat; /* Beispielhafte Verwendung von Source Sans 3 */
+}

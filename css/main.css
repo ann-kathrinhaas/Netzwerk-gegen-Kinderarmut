@@ -22,8 +22,11 @@
 body {
   color: #000000;
 }
-body h2, body h3, body h4, body h5 {
+body h1, body h2, body h3, body h4, body h5 {
   font-family: "Montserrat", sans-serif;
+}
+body h1 {
+  font-size: 3rem;
 }
 body h2 {
   font-size: 2.5rem;
@@ -36,6 +39,9 @@ body h4 {
 }
 body h5 {
   font-size: 1.25rem;
+}
+body .sub-heading {
+  font-size: 1.5rem;
 }
 body .bold {
   font-weight: bold;
@@ -56,6 +62,24 @@ body a:hover {
 body .module-wrapper {
   width: 80vw;
   margin: 10rem auto;
+}
+body .module-wrapper.header {
+  width: 100%;
+  margin: 0;
+  background: white url("/assets/images/img_header-home.png") no-repeat;
+}
+body .module-wrapper.header .module {
+  width: 80vw;
+  padding: 18rem 0 8rem 7rem;
+}
+body .module-wrapper.header .header-img {
+  width: 100%;
+}
+body .module-wrapper.header .text-wrapper {
+  color: #FFFFFF;
+}
+body .module-wrapper.header .text-wrapper .sub-heading {
+  width: 50%;
 }
 body .module-wrapper.hilfe-und-beratung .stoerer {
   background: #FF7388;

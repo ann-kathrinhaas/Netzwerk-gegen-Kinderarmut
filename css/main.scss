@@ -43,8 +43,12 @@ $font-source-sans: 'Source Sans 3', sans-serif;
 body {
     color: $black;
         
-        h2, h3, h4, h5 {
+        h1, h2, h3, h4, h5 {
             font-family: $font-montserrat;
+        }
+
+        h1 {
+            font-size: 3rem;
         }
 
         h2 {
@@ -61,6 +65,10 @@ body {
 
         h5 {
             font-size: 1.25rem;
+        }
+
+        .sub-heading {
+            font-size: 1.5rem;
         }
 
         .bold {
@@ -87,6 +95,29 @@ body {
     .module-wrapper {
         width: 80vw;
         margin: 10rem auto;
+
+        &.header {
+            width: 100%;
+            margin: 0;
+            background: white url("/assets/images/img_header-home.png") no-repeat;
+
+            .module {
+                width: 80vw;
+                padding: 18rem 0 8rem 7rem;
+            }
+
+            .header-img {
+                width: 100%;
+            }
+
+            .text-wrapper {
+                color: $white;
+
+               .sub-heading {
+                   width: 50%;
+               }
+            }
+        }
 
         &.hilfe-und-beratung {
             .stoerer {

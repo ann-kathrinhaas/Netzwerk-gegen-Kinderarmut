@@ -22,7 +22,7 @@
 body {
   color: #000000;
 }
-body h2, body h3, body h4 {
+body h2, body h3, body h4, body h5 {
   font-family: "Montserrat", sans-serif;
 }
 body h2 {
@@ -34,15 +34,21 @@ body h3 {
 body h4 {
   font-size: 1.5rem;
 }
+body h5 {
+  font-size: 1.25rem;
+}
 body .bold {
   font-weight: bold;
 }
 body .semibold {
   font-weight: 600;
 }
-body p {
+body p, body a {
   font-family: "Source Sans 3", sans-serif;
   font-size: 1rem;
+}
+body a {
+  text-decoration: none;
 }
 body a:hover {
   cursor: pointer;
@@ -143,4 +149,27 @@ body .module-wrapper .module .heading-with-marker .line-marker {
   height: 2rem;
   background: #42A2C4;
   margin-right: 1rem;
+}
+body .module-wrapper.footer {
+  background: linear-gradient(to bottom, #E6DCF7 0%, #C8CBEC 100%);
+  color: #9367CC;
+  width: 100%;
+  margin: 0;
+}
+body .module-wrapper.footer .flex-module {
+  flex-direction: column;
+  padding: 4rem 0;
+}
+body .module-wrapper.footer .flex-module h5, body .module-wrapper.footer .flex-module a:last-of-type, body .module-wrapper.footer .flex-module .instagram-icon {
+  margin-bottom: 2rem;
+}
+body .module-wrapper.footer .flex-module .instagram-icon {
+  width: 2.5rem;
+  height: auto;
+}
+body .module-wrapper.footer .flex-module a {
+  color: rgba(147, 103, 204, 0.5);
+}
+body .module-wrapper.footer .flex-module a:hover {
+  color: #9367CC;
 }/*# sourceMappingURL=main.css.map */

@@ -5,7 +5,7 @@ $pink: #FF7388;
 $orange: #FEA623;
 $blue: #42A2C4;
 $green: #34B6A2;
-$purple: #6D5492;
+$purple: #9367CC;
 
 /* GRADIENTS */
 $pink-gradient: linear-gradient(to bottom, #FFCDD1 0%, #F07B84 100%);
@@ -43,7 +43,7 @@ $font-source-sans: 'Source Sans 3', sans-serif;
 body {
     color: $black;
         
-        h2, h3, h4 {
+        h2, h3, h4, h5 {
             font-family: $font-montserrat;
         }
 
@@ -59,6 +59,10 @@ body {
             font-size: 1.5rem;
         }
 
+        h5 {
+            font-size: 1.25rem;
+        }
+
         .bold {
             font-weight: bold;
         }
@@ -67,9 +71,13 @@ body {
             font-weight: 600;
         }
 
-        p {
+        p, a {
             font-family: $font-source-sans; 
             font-size: 1rem;
+        }
+
+        a {
+            text-decoration: none;
         }
 
         a:hover {
@@ -119,7 +127,7 @@ body {
                 background: $green-gradient;
             }
         }
-
+        
         .module {
             &.stoerer, &.content {
                 padding: 2.5rem 7rem;
@@ -216,6 +224,35 @@ body {
                 }
 
                
+            }
+        }
+
+        &.footer {
+            background: $purple-gradient;
+            color: $purple;
+            width: 100%;
+            margin: 0;
+
+            .flex-module {
+                flex-direction: column;
+                padding: 4rem 0;
+
+                h5, a:last-of-type, .instagram-icon {
+                    margin-bottom: 2rem;
+                }
+
+                .instagram-icon {
+                    width: 2.5rem;
+                    height: auto;
+                }
+
+                a {
+                    color: rgba($purple, 0.5);
+
+                    &:hover {
+                        color: $purple;
+                    }
+                }
             }
         }
     }

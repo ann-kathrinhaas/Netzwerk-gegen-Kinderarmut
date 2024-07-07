@@ -79,6 +79,10 @@ body {
             font-weight: 600;
         }
 
+        .center {
+            text-align: center;
+        }
+
         p, a {
             font-family: $font-source-sans; 
             font-size: 1rem;
@@ -104,6 +108,11 @@ body {
             .module {
                 width: 80vw;
                 padding: 18rem 0 8rem 7rem;
+
+                &.stoerer {
+                    background: $purple-gradient;
+                    color: $purple;
+                }
             }
 
             .header-img {

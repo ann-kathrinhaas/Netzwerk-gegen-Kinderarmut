@@ -49,6 +49,9 @@ body .bold {
 body .semibold {
   font-weight: 600;
 }
+body .center {
+  text-align: center;
+}
 body p, body a {
   font-family: "Source Sans 3", sans-serif;
   font-size: 1rem;
@@ -71,6 +74,10 @@ body .module-wrapper.header {
 body .module-wrapper.header .module {
   width: 80vw;
   padding: 18rem 0 8rem 7rem;
+}
+body .module-wrapper.header .module.stoerer {
+  background: linear-gradient(to bottom, #E6DCF7 0%, #C8CBEC 100%);
+  color: #9367CC;
 }
 body .module-wrapper.header .header-img {
   width: 100%;

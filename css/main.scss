@@ -24,14 +24,14 @@ $purple-gradient: linear-gradient(to bottom, #E6DCF7 0%, #C8CBEC 100%);
 
 @font-face {
     font-family: 'Source Sans 3';
-    src: url('font/SourceSans3/SourceSans3-SemiBold.ttf') format('truetype');
+    src: url('font/Source_Sans_3/SourceSans3-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Source Sans 3';
-    src: url('font/SourceSans3/SourceSans3-Regular.ttf') format('truetype');
+    src: url('font/Source_Sans_3/SourceSans3-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -92,7 +92,7 @@ body {
             text-decoration: none;
         }
 
-        a:hover {
+        a:hover, button:hover {
             cursor: pointer;
         }
 
@@ -234,6 +234,52 @@ body {
                 }
             }
 
+            .slider {
+                background: rgba($white, 0.7);
+                border-radius: 2%;
+                box-shadow:  2.5px 2px 1px rgba($black, 0.1);
+                padding: 2rem;
+
+                .slider-item {
+                    .flex-module {
+                        gap: 2rem;
+                        align-items: flex-start;
+
+                        .slider-img {
+                            width: 55%;
+
+                            img {
+                                width: -webkit-fill-available;
+                            }
+                        }
+
+                        .slider-content {
+                            width: 35%;
+
+                            .btn {
+                                padding: 0.7rem 1.5rem;
+                                border-radius: 7px;
+                                font-size: 1rem;
+                                background: none;
+
+                                &.btn-pink {
+                                    color: $pink;
+                                    border: 2px solid $pink;
+                                    
+                                    &:hover {
+                                        background: $pink;
+                                    }
+                                }
+
+                                &:hover {
+                                    color: $white;
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+
             .sport, .kultur, .veranstaltungen {
                 .heading-with-marker {
                     margin-top: 5rem;
@@ -287,7 +333,7 @@ body {
                 }
 
                 a {
-                    color: rgba($purple, 0.5);
+                     
 
                     &:hover {
                         color: $purple;

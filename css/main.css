@@ -9,13 +9,13 @@
 }
 @font-face {
   font-family: "Source Sans 3";
-  src: url("font/SourceSans3/SourceSans3-SemiBold.ttf") format("truetype");
+  src: url("font/Source_Sans_3/SourceSans3-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Source Sans 3";
-  src: url("font/SourceSans3/SourceSans3-Regular.ttf") format("truetype");
+  src: url("font/Source_Sans_3/SourceSans3-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -59,7 +59,7 @@ body p, body a {
 body a {
   text-decoration: none;
 }
-body a:hover {
+body a:hover, body button:hover {
   cursor: pointer;
 }
 body .module-wrapper {
@@ -162,6 +162,41 @@ body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-frei
 body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-kleidung {
   background: #34B6A2;
 }
+body .module-wrapper .module .slider {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 2%;
+  box-shadow: 2.5px 2px 1px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+body .module-wrapper .module .slider .slider-item .flex-module {
+  gap: 2rem;
+  align-items: flex-start;
+}
+body .module-wrapper .module .slider .slider-item .flex-module .slider-img {
+  width: 55%;
+}
+body .module-wrapper .module .slider .slider-item .flex-module .slider-img img {
+  width: -webkit-fill-available;
+}
+body .module-wrapper .module .slider .slider-item .flex-module .slider-content {
+  width: 35%;
+}
+body .module-wrapper .module .slider .slider-item .flex-module .slider-content .btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: none;
+}
+body .module-wrapper .module .slider .slider-item .flex-module .slider-content .btn.btn-pink {
+  color: #FF7388;
+  border: 2px solid #FF7388;
+}
+body .module-wrapper .module .slider .slider-item .flex-module .slider-content .btn.btn-pink:hover {
+  background: #FF7388;
+}
+body .module-wrapper .module .slider .slider-item .flex-module .slider-content .btn:hover {
+  color: #FFFFFF;
+}
 body .module-wrapper .module .sport .heading-with-marker, body .module-wrapper .module .kultur .heading-with-marker, body .module-wrapper .module .veranstaltungen .heading-with-marker {
   margin-top: 5rem;
   margin-bottom: -1rem;
@@ -197,9 +232,6 @@ body .module-wrapper.footer .flex-module h5, body .module-wrapper.footer .flex-m
 body .module-wrapper.footer .flex-module .instagram-icon {
   width: 2.5rem;
   height: auto;
-}
-body .module-wrapper.footer .flex-module a {
-  color: rgba(147, 103, 204, 0.5);
 }
 body .module-wrapper.footer .flex-module a:hover {
   color: #9367CC;

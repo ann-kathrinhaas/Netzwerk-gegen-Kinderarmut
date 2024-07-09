@@ -170,6 +170,10 @@ body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-frei
 body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-kleidung {
   background: #34B6A2;
 }
+body .module-wrapper .module .carousel-inner .d-block {
+  width: 55%;
+  width: -webkit-fill-available;
+}
 body .module-wrapper .module .sport .heading-with-marker, body .module-wrapper .module .kultur .heading-with-marker, body .module-wrapper .module .veranstaltungen .heading-with-marker {
   margin-top: 5rem;
   margin-bottom: -1rem;

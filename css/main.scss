@@ -240,6 +240,15 @@ body {
                 }
             }
 
+            .carousel-inner {
+               
+                .d-block {
+                    width: 55%;
+                    width: -webkit-fill-available;
+                }
+            }
+
+
             .sport, .kultur, .veranstaltungen {
                 .heading-with-marker {
                     margin-top: 5rem;
@@ -302,4 +311,5 @@ body {
             }
         }
     }
+    
 }

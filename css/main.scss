@@ -1,102 +1,199 @@
 /* COLORS */
-$white: #FFFFFF;
+$white: #ffffff;
 $black: #000000;
-$pink: #FF7388;
-$orange: #FEA623;
-$blue: #42A2C4;
-$green: #34B6A2;
-$purple: #9367CC;
+$pink: #ff7388;
+$orange: #fea623;
+$blue: #42a2c4;
+$green: #34b6a2;
+$purple: #9367cc;
 
 /* GRADIENTS */
-$pink-gradient: linear-gradient(to bottom, #FFCDD1 0%, #F07B84 100%);
-$orange-gradient: linear-gradient(to bottom, #FFDEAC 0%, #FFBE5E 100%);
-$blue-gradient: linear-gradient(to bottom, #CEE9FC 0%, #8FC5D9 100%);
-$green-gradient: linear-gradient(to bottom, #C6FBFF 0%, #8FD9CC 100%);
-$purple-gradient: linear-gradient(to bottom, #E6DCF7 0%, #C8CBEC 100%);
+$pink-gradient: linear-gradient(to bottom, #ffcdd1 0%, #f07b84 100%);
+$orange-gradient: linear-gradient(to bottom, #ffdeac 0%, #ffbe5e 100%);
+$blue-gradient: linear-gradient(to bottom, #cee9fc 0%, #8fc5d9 100%);
+$green-gradient: linear-gradient(to bottom, #c6fbff 0%, #8fd9cc 100%);
+$purple-gradient: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
 
 /* FONTS */
 @font-face {
-    font-family: 'Montserrat';
-    src: url('font/Montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-family: "Montserrat";
+    src: url("font/Montserrat/Montserrat-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Source Sans 3';
-    src: url('font/SourceSans3/SourceSans3-SemiBold.ttf') format('truetype');
+    font-family: "Source Sans 3";
+    src: url("font/SourceSans3/SourceSans3-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Source Sans 3';
-    src: url('font/SourceSans3/SourceSans3-Regular.ttf') format('truetype');
+    font-family: "Source Sans 3";
+    src: url("font/SourceSans3/SourceSans3-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
-$font-montserrat: 'Montserrat', sans-serif;
-$font-source-sans: 'Source Sans 3', sans-serif;
-
+$font-montserrat: "Montserrat", sans-serif;
+$font-source-sans: "Source Sans 3", sans-serif;
 
 body {
     margin: 0;
     padding: 0;
     color: $black;
-        
-        h1, h2, h3, h4, h5 {
-            font-family: $font-montserrat;
-        }
 
-        h1 {
-            font-size: 3rem;
-        }
+    .navigation {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10vw;
 
-        h2 {
-            font-size: 2.5rem;
-        }
+        .navbar {
+            margin: 4rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
 
-        h3 {
-            font-size: 2rem;
-        }
+            .nav-item {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 4px;
+                position: relative;
 
-        h4 {
-            font-size: 1.5rem;
-        }
+                &.active {
+                    span {
+                        width: 100%;
+                        right: 0;
+                        transition: all 1s ease;
+                    }
 
-        h5 {
-            font-size: 1.25rem;
-        }
+                    a {
+                        color: $blue;
+                    }
+                }
 
-        .sub-heading {
-            font-size: 1.5rem;
-        }
+                a {
+                    text-decoration: none;
+                    font-size: 1rem;
+                    display: block;
 
-        .bold {
-            font-weight: bold;
-        }
+                    &.purple {
+                        color: $purple;
+                    }
 
-        .semibold {
-            font-weight: 600;
-        }
+                    &.pink {
+                        color: $pink;
+                    }
 
-        .center {
-            text-align: center;
-        }
+                    &.orange {
+                        color: $orange;
+                    }
 
-        p, a {
-            font-family: $font-source-sans; 
-            font-size: 1rem;
-        }
+                    &.blue {
+                        color: $blue;
+                    }
 
-        a {
-            text-decoration: none;
-        }
+                    &.green {
+                        color: $green;
+                    }
 
-        a:hover {
-            cursor: pointer;
+                    &:hover {
+                        font-weight: 600;
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    bottom: -0.5rem;
+                    right: -100%;
+                    height: 2px;
+                    transition: all 1s ease;
+
+                    &.purple-line {
+                        background: $purple; 
+                    }
+
+                    &.pink-line {
+                        background: $pink; 
+                    }
+
+                    &.orange-line {
+                        background: $orange; 
+                    }
+
+                    &.blue-line {
+                        background: $blue; 
+                    }
+
+                    &.green-line {
+                        background: $green; 
+                    }
+                }
+            }
         }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: $font-montserrat;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    .sub-heading {
+        font-size: 1.5rem;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .semibold {
+        font-weight: 600;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    p,
+    a {
+        font-family: $font-source-sans;
+        font-size: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
 
     .module-wrapper {
         width: 80vw;
@@ -125,9 +222,9 @@ body {
             .text-wrapper {
                 color: $white;
 
-               .sub-heading {
-                   width: 50%;
-               }
+                .sub-heading {
+                    width: 50%;
+                }
             }
         }
 
@@ -170,13 +267,14 @@ body {
                 background: $green-gradient;
             }
         }
-        
+
         .module {
             max-width: 1024px;
             margin: 0 auto;
             padding: 0 2rem;
 
-            &.stoerer, &.content {
+            &.stoerer,
+            &.content {
                 padding: 2.5rem 7rem;
             }
 
@@ -188,13 +286,13 @@ body {
 
                 &.items {
                     justify-content: space-around;
-                    
+
                     .item {
-                       height: 4rem;
-                       width: auto;  
+                        height: 4rem;
+                        width: auto;
                     }
                 }
-               
+
                 &.icon-with-heading {
                     justify-content: flex-start;
                     gap: 1rem;
@@ -210,8 +308,8 @@ body {
                         padding: 0 5px;
                         z-index: 0;
                     }
-                  
-                      h2 > .line {
+
+                    h2 > .line {
                         position: absolute;
                         bottom: -1px;
                         left: 0;
@@ -234,21 +332,21 @@ body {
                         &.line-kleidung {
                             background: $green;
                         }
-
-                      }
-                    
+                    }
                 }
             }
 
-            .sport, .kultur, .veranstaltungen {
+            .sport,
+            .kultur,
+            .veranstaltungen {
                 .heading-with-marker {
                     margin-top: 5rem;
                     margin-bottom: -1rem;
                 }
 
-                .alle-angebote{
+                .alle-angebote {
                     padding-left: 1.75rem;
-                } 
+                }
 
                 .alle-angebote:hover {
                     .blue {
@@ -268,8 +366,6 @@ body {
                     background: $blue;
                     margin-right: 1rem;
                 }
-
-               
             }
         }
 
@@ -283,7 +379,9 @@ body {
                 flex-direction: column;
                 padding: 4rem 0;
 
-                h5, a:last-of-type, .instagram-icon {
+                h5,
+                a:last-of-type,
+                .instagram-icon {
                     margin-bottom: 2rem;
                 }
 

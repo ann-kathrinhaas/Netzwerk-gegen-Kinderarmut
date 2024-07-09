@@ -7,22 +7,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netzwerk gegen Kinderarmut</title>
   <link rel="stylesheet" href="../css/main.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="/js/script.js" defer></script>
 </head>
 
 <body>
-  <div class="module-wrapper header">
+  <nav class="navigation">
+    <div class="navbar">
+      <div class="js-nav-item active nav-item">
+        <a class="purple" href="#home" alt="Home" title="Home">Home</a>
+        <span class="purple-line"></span>
+      </div>
+      <div class="js-nav-item nav-item">
+        <a class="pink" href="#hilfeUndBeratung" alt="Hilfe & Beratung" title="Hilfe & Beratung">Hilfe & Beratung</a>
+        <span class="pink-line"></span>
+      </div>
+      <div class="js-nav-item nav-item">
+        <a class="orange" href="#essen" alt="Essen" title="Essen">Essen</a>
+        <span class="orange-line"></span>
+      </div>
+      <div class="js-nav-item nav-item">
+        <a class="blue" href="#freizeit" alt="Freizeit" title="Freizeit">Freizeit</a>
+        <span class="blue-line"></span>
+      </div>
+      <div class="js-nav-item nav-item">
+        <a class="green" href="#kleidung" alt="Kleidung" title="Kleidung">Kleidung</a>
+        <span class="green-line"></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="module-wrapper header" id="home">
     <div class="module">
-        <div class="text-wrapper">
-          <h1 class="bold">Zukunft gestalten,<br>Möglichkeiten nutzen.<br>Gemeinsam voran!</h1>
-          <p class="sub-heading">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
-        </div>
+      <div class="text-wrapper">
+        <h1 class="bold">Zukunft gestalten,<br>Möglichkeiten nutzen.<br>Gemeinsam voran!</h1>
+        <p class="sub-heading">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+          consequuntur magni dolores.</p>
+      </div>
     </div>
     <div class="module stoerer">
       <h4 class="center">Hier geht es weiter zu den verschiedenen Kategorien</h2>
     </div>
   </div>
 
-  <div class="module-wrapper hilfe-und-beratung">
+  <div class="module-wrapper hilfe-und-beratung" id="hilfeUndBeratung">
     <div class="module stoerer">
       <div class="flex-module items">
         <div item>
@@ -51,7 +79,7 @@
     </div>
   </div>
 
-  <div class="module-wrapper essen">
+  <div class="module-wrapper essen" id="essen">
     <div class="module stoerer">
       <div class="flex-module items">
         <div item>
@@ -80,7 +108,7 @@
     </div>
   </div>
 
-  <div class="module-wrapper freizeit">
+  <div class="module-wrapper freizeit" id="freizeit">
     <div class="module stoerer">
       <div class="flex-module items">
         <div item>
@@ -150,7 +178,7 @@
     </div>
   </div>
 
-  <div class="module-wrapper kleidung">
+  <div class="module-wrapper kleidung" id="kleidung">
     <div class="module stoerer">
       <div class="flex-module items">
         <div item>
@@ -181,17 +209,17 @@
 
   <footer>
     <div class="module-wrapper footer">
-    <div class="module">
-      <div class="flex-module">
-        <h5>Lorem impsum</h5>
-        <a href="" alt="Instagram" title="Instagram"><img class="instagram-icon"
-            src="/assets/icons/ic_instagram.svg"></a>
-        <a href="" alt="Datenschutz" title="Datenschutz">Datenschutz</a>
-        <a href="" alt="Impressum" title="Impressum">Impressum</a>
-        <p>© 2024 Netzwerk gegen Kinderarmut</p>
+      <div class="module">
+        <div class="flex-module">
+          <h5>Lorem impsum</h5>
+          <a href="" alt="Instagram" title="Instagram"><img class="instagram-icon"
+              src="/assets/icons/ic_instagram.svg"></a>
+          <a href="" alt="Datenschutz" title="Datenschutz">Datenschutz</a>
+          <a href="" alt="Impressum" title="Impressum">Impressum</a>
+          <p>© 2024 Netzwerk gegen Kinderarmut</p>
+        </div>
       </div>
     </div>
-  </div>
   </footer>
 
 </body>

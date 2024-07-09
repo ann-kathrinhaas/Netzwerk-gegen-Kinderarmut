@@ -24,7 +24,11 @@ body {
   padding: 0;
   color: #000000;
 }
-body h1, body h2, body h3, body h4, body h5 {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
   font-family: "Montserrat", sans-serif;
 }
 body h1 {
@@ -54,7 +58,8 @@ body .semibold {
 body .center {
   text-align: center;
 }
-body p, body a {
+body p,
+body a {
   font-family: "Source Sans 3", sans-serif;
   font-size: 1rem;
 }
@@ -170,21 +175,46 @@ body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-frei
 body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-kleidung {
   background: #34B6A2;
 }
-body .module-wrapper .module .carousel-inner .d-block {
+body .module-wrapper .module .slider-Hilfe-Beratung {
+  background: #000000;
+  border-radius: 2%;
+  box-shadow: 2.5px 2px 1px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+body .module-wrapper .module .slider-Hilfe-Beratung .carousel-inner {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 2%;
+  box-shadow: 2.5px 2px 1px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 65%;
+}
+body .module-wrapper .module .slider-Hilfe-Beratung .carousel-inner .d-block {
   width: 55%;
   width: -webkit-fill-available;
 }
-body .module-wrapper .module .sport .heading-with-marker, body .module-wrapper .module .kultur .heading-with-marker, body .module-wrapper .module .veranstaltungen .heading-with-marker {
+body .module-wrapper .module .slider-Hilfe-Beratung .carousel-inner .sliderBtn-hilfe-beratung {
+  height: 30%;
+  border-radius: 3px #FF7388;
+}
+body .module-wrapper .module .sport .heading-with-marker,
+body .module-wrapper .module .kultur .heading-with-marker,
+body .module-wrapper .module .veranstaltungen .heading-with-marker {
   margin-top: 5rem;
   margin-bottom: -1rem;
 }
-body .module-wrapper .module .sport .alle-angebote, body .module-wrapper .module .kultur .alle-angebote, body .module-wrapper .module .veranstaltungen .alle-angebote {
+body .module-wrapper .module .sport .alle-angebote,
+body .module-wrapper .module .kultur .alle-angebote,
+body .module-wrapper .module .veranstaltungen .alle-angebote {
   padding-left: 1.75rem;
 }
-body .module-wrapper .module .sport .alle-angebote:hover .blue, body .module-wrapper .module .kultur .alle-angebote:hover .blue, body .module-wrapper .module .veranstaltungen .alle-angebote:hover .blue {
+body .module-wrapper .module .sport .alle-angebote:hover .blue,
+body .module-wrapper .module .kultur .alle-angebote:hover .blue,
+body .module-wrapper .module .veranstaltungen .alle-angebote:hover .blue {
   color: #42A2C4;
 }
-body .module-wrapper .module .sport .alle-angebote:hover .arrow-icon, body .module-wrapper .module .kultur .alle-angebote:hover .arrow-icon, body .module-wrapper .module .veranstaltungen .alle-angebote:hover .arrow-icon {
+body .module-wrapper .module .sport .alle-angebote:hover .arrow-icon,
+body .module-wrapper .module .kultur .alle-angebote:hover .arrow-icon,
+body .module-wrapper .module .veranstaltungen .alle-angebote:hover .arrow-icon {
   content: url("/assets/icons/ic_arrow-right-blue.svg");
 }
 body .module-wrapper .module .heading-with-marker .line-marker {
@@ -203,7 +233,9 @@ body .module-wrapper.footer .flex-module {
   flex-direction: column;
   padding: 4rem 0;
 }
-body .module-wrapper.footer .flex-module h5, body .module-wrapper.footer .flex-module a:last-of-type, body .module-wrapper.footer .flex-module .instagram-icon {
+body .module-wrapper.footer .flex-module h5,
+body .module-wrapper.footer .flex-module a:last-of-type,
+body .module-wrapper.footer .flex-module .instagram-icon {
   margin-bottom: 2rem;
 }
 body .module-wrapper.footer .flex-module .instagram-icon {

@@ -13,6 +13,11 @@ $theme-colors: (
 );
 
 
+.customCard01 {
+    background-color: $blue;
+}
+
+
 /* GRADIENTS */
 $pink-gradient: linear-gradient(to bottom, #FFCDD1 0%, #F07B84 100%);
 $orange-gradient: linear-gradient(to bottom, #FFDEAC 0%, #FFBE5E 100%);
@@ -44,6 +49,7 @@ $purple-gradient: linear-gradient(to bottom, #E6DCF7 0%, #C8CBEC 100%);
 
 $font-montserrat: 'Montserrat', sans-serif;
 $font-source-sans: 'Source Sans 3', sans-serif;
+
 
 
 

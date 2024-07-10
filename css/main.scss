@@ -39,10 +39,10 @@ $purple-gradient: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
 $font-montserrat: "Montserrat", sans-serif;
 $font-source-sans: "Source Sans 3", sans-serif;
 
-@import "navigation";
-@import "header";
 @import "footer";
-
+@import "header";
+@import "links";
+@import "navigation";
 @import "typography";
 
 body {
@@ -50,63 +50,18 @@ body {
     padding: 0;
     color: $black; 
 
-    // h1,
-    // h2,
-    // h3,
-    // h4,
-    // h5 {
-    //     font-family: $font-montserrat;
+    // a {
+    //     font-family: $font-source-sans;
+    //     font-size: 1rem;
     // }
 
-    // h1 {
-    //     font-size: 3rem;
+    // a {
+    //     text-decoration: none;
     // }
 
-    // h2 {
-    //     font-size: 2.5rem;
+    // a:hover {
+    //     cursor: pointer;
     // }
-
-    // h3 {
-    //     font-size: 2rem;
-    // }
-
-    // h4 {
-    //     font-size: 1.5rem;
-    // }
-
-    // h5 {
-    //     font-size: 1.25rem;
-    // }
-
-    // .sub-heading {
-    //     font-size: 1.5rem;
-    // }
-
-    // .bold {
-    //     font-weight: bold;
-    // }
-
-    // .semibold {
-    //     font-weight: 600;
-    // }
-
-    // .center {
-    //     text-align: center;
-    // }
-
-    // p,
-    a {
-        font-family: $font-source-sans;
-        font-size: 1rem;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    a:hover {
-        cursor: pointer;
-    }
 
     .module-wrapper {
         width: 80vw;

@@ -40,6 +40,7 @@ $font-montserrat: "Montserrat", sans-serif;
 $font-source-sans: "Source Sans 3", sans-serif;
 
 @import "navigation";
+@import "footer";
 
 body {
     margin: 0;
@@ -274,37 +275,6 @@ body {
                     height: 2rem;
                     background: $blue;
                     margin-right: 1rem;
-                }
-            }
-        }
-
-        &.footer {
-            background: $purple-gradient;
-            color: $purple;
-            width: 100%;
-            margin: 0;
-
-            .flex-module {
-                flex-direction: column;
-                padding: 4rem 0;
-
-                h5,
-                a:last-of-type,
-                .instagram-icon {
-                    margin-bottom: 2rem;
-                }
-
-                .instagram-icon {
-                    width: 2.5rem;
-                    height: auto;
-                }
-
-                a {
-                    color: rgba($purple, 0.5);
-
-                    &:hover {
-                        color: $purple;
-                    }
                 }
             }
         }

@@ -48,7 +48,7 @@ $font-source-sans: "Source Sans 3", sans-serif;
 body {
     margin: 0;
     padding: 0;
-    color: $black; 
+    color: $black;
 
     .module-wrapper {
         width: 70vw;
@@ -104,6 +104,10 @@ body {
                 padding: 2.5rem 7rem;
             }
 
+            &.stoerer {
+                height: auto;
+            }
+
             .flex-module {
                 display: flex;
                 flex-direction: row;
@@ -112,10 +116,27 @@ body {
 
                 &.items {
                     justify-content: space-around;
+                    height: 7rem;
 
                     .item {
-                        height: 4rem;
-                        width: auto;
+                        height: 5rem;
+                        display: flex;
+                        align-items: center;
+
+                        &.item-bottom {
+                            align-self: flex-end;
+                        }
+
+                        &.item-top {
+                            align-self: flex-start;
+                        }
+
+                        img {
+                            max-height: 100%;
+                            max-width: 100%;
+                            height: auto;
+                            width: auto;
+                        }
                     }
                 }
 

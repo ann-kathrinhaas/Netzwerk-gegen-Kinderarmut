@@ -48,7 +48,7 @@
 .module-wrapper.header {
   width: 100vw;
   margin: 0 auto;
-  background: white url("/assets/images/img_header-home.png") no-repeat no-repeat fixed center;
+  background: url("/assets/images/img_header-home.png") no-repeat fixed center;
   background-size: cover;
 }
 .module-wrapper.header .module {
@@ -193,8 +193,7 @@ h5 {
   text-align: center;
 }
 
-p,
-a {
+p {
   font-family: "Source Sans 3", sans-serif;
   font-size: 1rem;
 }
@@ -205,7 +204,7 @@ body {
   color: #000000;
 }
 body .module-wrapper {
-  width: 80vw;
+  width: 70vw;
   margin: 10rem auto;
 }
 body .module-wrapper.hilfe-und-beratung .stoerer {
@@ -240,6 +239,9 @@ body .module-wrapper .module {
 body .module-wrapper .module.stoerer, body .module-wrapper .module.content {
   padding: 2.5rem 7rem;
 }
+body .module-wrapper .module.stoerer {
+  height: auto;
+}
 body .module-wrapper .module .flex-module {
   display: flex;
   flex-direction: row;
@@ -248,9 +250,23 @@ body .module-wrapper .module .flex-module {
 }
 body .module-wrapper .module .flex-module.items {
   justify-content: space-around;
+  height: 7rem;
 }
 body .module-wrapper .module .flex-module.items .item {
-  height: 4rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+body .module-wrapper .module .flex-module.items .item.item-bottom {
+  align-self: flex-end;
+}
+body .module-wrapper .module .flex-module.items .item.item-top {
+  align-self: flex-start;
+}
+body .module-wrapper .module .flex-module.items .item img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
   width: auto;
 }
 body .module-wrapper .module .flex-module.icon-with-heading {

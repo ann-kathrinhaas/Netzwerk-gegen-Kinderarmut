@@ -19,83 +19,81 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
-  margin: 0;
-  padding: 0;
-  color: #000000;
-}
-body .navigation {
+.navigation {
   position: fixed;
   top: 0;
   right: 0;
   width: 10vw;
 }
-body .navigation .navbar {
+.navigation .navbar {
   margin: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
 }
-body .navigation .navbar .nav-item {
+.navigation .navbar .nav-item {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 4px;
   position: relative;
 }
-body .navigation .navbar .nav-item.active span {
+.navigation .navbar .nav-item.active span {
   width: 100%;
   right: 0;
   transition: all 1s ease;
 }
-body .navigation .navbar .nav-item.active a {
-  color: #42a2c4;
-}
-body .navigation .navbar .nav-item a {
+.navigation .navbar .nav-item a {
   text-decoration: none;
   font-size: 1rem;
   display: block;
 }
-body .navigation .navbar .nav-item a.purple {
+.navigation .navbar .nav-item a.purple {
   color: #9367cc;
 }
-body .navigation .navbar .nav-item a.pink {
+.navigation .navbar .nav-item a.pink {
   color: #ff7388;
 }
-body .navigation .navbar .nav-item a.orange {
+.navigation .navbar .nav-item a.orange {
   color: #fea623;
 }
-body .navigation .navbar .nav-item a.blue {
+.navigation .navbar .nav-item a.blue {
   color: #42a2c4;
 }
-body .navigation .navbar .nav-item a.green {
+.navigation .navbar .nav-item a.green {
   color: #34b6a2;
 }
-body .navigation .navbar .nav-item a:hover {
+.navigation .navbar .nav-item a:hover {
   font-weight: 600;
 }
-body .navigation .navbar .nav-item span {
+.navigation .navbar .nav-item span {
   position: absolute;
   bottom: -0.5rem;
   right: -100%;
   height: 2px;
   transition: all 1s ease;
 }
-body .navigation .navbar .nav-item span.purple-line {
+.navigation .navbar .nav-item span.purple-line {
   background: #9367cc;
 }
-body .navigation .navbar .nav-item span.pink-line {
+.navigation .navbar .nav-item span.pink-line {
   background: #ff7388;
 }
-body .navigation .navbar .nav-item span.orange-line {
+.navigation .navbar .nav-item span.orange-line {
   background: #fea623;
 }
-body .navigation .navbar .nav-item span.blue-line {
+.navigation .navbar .nav-item span.blue-line {
   background: #42a2c4;
 }
-body .navigation .navbar .nav-item span.green-line {
+.navigation .navbar .nav-item span.green-line {
   background: #34b6a2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000000;
 }
 body h1,
 body h2,

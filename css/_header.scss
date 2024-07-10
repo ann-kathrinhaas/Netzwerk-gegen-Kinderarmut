@@ -1,0 +1,30 @@
+.module-wrapper {
+    &.header {
+        width: 100vw;
+        margin: 0 auto;
+        background: white url("/assets/images/img_header-home.png") no-repeat no-repeat fixed center;
+        background-size: cover;
+
+        .module {
+            width: 80vw;
+            padding: 18rem 0 8rem 7rem;
+
+            &.stoerer {
+                background: $purple-gradient;
+                color: $purple;
+            }
+        }
+
+        .header-img {
+            width: 100%;
+        }
+
+        .text-wrapper {
+            color: $white;
+
+            .sub-heading {
+                width: 50%;
+            }
+        }
+    }
+}

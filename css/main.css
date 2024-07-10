@@ -90,6 +90,30 @@
   background: #34b6a2;
 }
 
+.module-wrapper.header {
+  width: 100vw;
+  margin: 0 auto;
+  background: white url("/assets/images/img_header-home.png") no-repeat no-repeat fixed center;
+  background-size: cover;
+}
+.module-wrapper.header .module {
+  width: 80vw;
+  padding: 18rem 0 8rem 7rem;
+}
+.module-wrapper.header .module.stoerer {
+  background: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
+  color: #9367cc;
+}
+.module-wrapper.header .header-img {
+  width: 100%;
+}
+.module-wrapper.header .text-wrapper {
+  color: #ffffff;
+}
+.module-wrapper.header .text-wrapper .sub-heading {
+  width: 50%;
+}
+
 .module-wrapper.footer {
   background: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
   color: #9367cc;
@@ -169,29 +193,6 @@ body a:hover {
 body .module-wrapper {
   width: 80vw;
   margin: 10rem auto;
-}
-body .module-wrapper.header {
-  width: 100vw;
-  margin: 0 auto;
-  background: white url("/assets/images/img_header-home.png") no-repeat no-repeat fixed center;
-  background-size: cover;
-}
-body .module-wrapper.header .module {
-  width: 80vw;
-  padding: 18rem 0 8rem 7rem;
-}
-body .module-wrapper.header .module.stoerer {
-  background: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
-  color: #9367cc;
-}
-body .module-wrapper.header .header-img {
-  width: 100%;
-}
-body .module-wrapper.header .text-wrapper {
-  color: #ffffff;
-}
-body .module-wrapper.header .text-wrapper .sub-heading {
-  width: 50%;
 }
 body .module-wrapper.hilfe-und-beratung .stoerer {
   background: #ff7388;

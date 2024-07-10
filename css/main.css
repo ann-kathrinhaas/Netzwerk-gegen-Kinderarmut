@@ -109,7 +109,7 @@ body .module-wrapper.essen .content {
   background: linear-gradient(to bottom, #FFDEAC 0%, #FFBE5E 100%);
 }
 body .module-wrapper.freizeit .stoerer {
-  background: #42A2C4;
+  background: #42A2C4 !important;
 }
 body .module-wrapper.freizeit .content {
   background: linear-gradient(to bottom, #CEE9FC 0%, #8FC5D9 100%);
@@ -170,7 +170,7 @@ body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-esse
   background: #FEA623;
 }
 body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-freizeit {
-  background: #42A2C4;
+  background: #42A2C4 !important;
 }
 body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-kleidung {
   background: #34B6A2;
@@ -210,7 +210,7 @@ body .module-wrapper .module .veranstaltungen .alle-angebote {
 body .module-wrapper .module .sport .alle-angebote:hover .blue,
 body .module-wrapper .module .kultur .alle-angebote:hover .blue,
 body .module-wrapper .module .veranstaltungen .alle-angebote:hover .blue {
-  color: #42A2C4;
+  color: #42A2C4 !important;
 }
 body .module-wrapper .module .sport .alle-angebote:hover .arrow-icon,
 body .module-wrapper .module .kultur .alle-angebote:hover .arrow-icon,
@@ -220,7 +220,7 @@ body .module-wrapper .module .veranstaltungen .alle-angebote:hover .arrow-icon {
 body .module-wrapper .module .heading-with-marker .line-marker {
   width: 0.75rem;
   height: 2rem;
-  background: #42A2C4;
+  background: #42A2C4 !important;
   margin-right: 1rem;
 }
 body .module-wrapper.footer {

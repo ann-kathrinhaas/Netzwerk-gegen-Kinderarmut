@@ -1,0 +1,79 @@
+.slider {
+    display: flex;
+    background: rgba($white, 0.7);
+    border-radius: 2%;
+    box-shadow: 2.5px 2px 1px rgba($black, 0.1);
+    padding: 2rem;
+
+    .slider-item {
+        .flex-module {
+            gap: 2rem;
+            align-items: flex-start;
+
+            .slider-img {
+                width: 55%;
+
+                img {
+                    width: -webkit-fill-available;
+                }
+
+            }
+
+            .slider-content {
+                width: 35%;
+
+                .btn {
+                    padding: 0.7rem 1.5rem;
+                    border-radius: 7px;
+                    font-size: 1rem;
+                    background: none;
+
+                    &.btn-pink {
+                        color: $pink;
+                        border: 2px solid $pink;
+
+                        &:hover {
+                            background: $pink;
+                        }
+                    }
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-next,
+    .slick-prev {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        align-items: center; // 2. vertically center contents
+        justify-content: center;
+        top: 45%;
+        bottom: 0;
+        z-index: 1;
+        width: 5%;
+        height: 10%;
+        border: none;
+        background: none;
+
+        &:nth-of-type(1) {
+            content: url("../assets/icons/ic_arrow-left.svg");
+        }
+
+        &:nth-of-type(2) {
+            content: url("../assets/icons/ic_arrow-right.svg");
+        }
+    }
+
+    .slick-next {
+        right: 1%;
+    }
+
+    .slick-prev {
+        left: 1%;
+    }
+}

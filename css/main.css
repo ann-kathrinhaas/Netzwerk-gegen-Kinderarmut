@@ -19,30 +19,62 @@
   font-weight: normal;
   font-style: normal;
 }
-.module-wrapper.footer {
-  background: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
-  color: #9367cc;
-  width: 100%;
-  margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
 }
-.module-wrapper.footer .flex-module {
-  flex-direction: column !important;
-  padding: 4rem 0;
+
+h1 {
+  font-size: 3rem;
 }
-.module-wrapper.footer .flex-module h5,
-.module-wrapper.footer .flex-module a:last-of-type,
-.module-wrapper.footer .flex-module .instagram-icon {
-  margin-bottom: 2rem;
+
+h2 {
+  font-size: 2.5rem;
 }
-.module-wrapper.footer .flex-module .instagram-icon {
-  width: 2.5rem;
-  height: auto;
+
+h3 {
+  font-size: 2rem;
 }
-.module-wrapper.footer .flex-module a {
-  color: rgba(147, 103, 204, 0.5);
+
+h4 {
+  font-size: 1.5rem;
 }
-.module-wrapper.footer .flex-module a:hover {
-  color: #9367cc;
+
+h5 {
+  font-size: 1.25rem;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1rem;
+}
+a:hover {
+  cursor: pointer;
 }
 
 .module-wrapper.header {
@@ -69,13 +101,30 @@
   width: 50%;
 }
 
-a {
-  text-decoration: none;
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 1rem;
+.module-wrapper.footer {
+  background: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
+  color: #9367cc;
+  width: 100%;
+  margin: 0;
 }
-a:hover {
-  cursor: pointer;
+.module-wrapper.footer .flex-module {
+  flex-direction: column !important;
+  padding: 4rem 0;
+}
+.module-wrapper.footer .flex-module h5,
+.module-wrapper.footer .flex-module a:last-of-type,
+.module-wrapper.footer .flex-module .instagram-icon {
+  margin-bottom: 2rem;
+}
+.module-wrapper.footer .flex-module .instagram-icon {
+  width: 2.5rem;
+  height: auto;
+}
+.module-wrapper.footer .flex-module a {
+  color: rgba(147, 103, 204, 0.5);
+}
+.module-wrapper.footer .flex-module a:hover {
+  color: #9367cc;
 }
 
 .navigation {
@@ -147,55 +196,6 @@ a:hover {
 }
 .navigation .navbar .nav-item span.green-line {
   background: #34b6a2;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Montserrat", sans-serif;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-.sub-heading {
-  font-size: 1.5rem;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.semibold {
-  font-weight: 600;
-}
-
-.center {
-  text-align: center;
-}
-
-p {
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 1rem;
 }
 
 body {

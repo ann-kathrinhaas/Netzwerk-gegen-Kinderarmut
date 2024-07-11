@@ -39,11 +39,22 @@ $purple-gradient: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
 $font-montserrat: "Montserrat", sans-serif;
 $font-source-sans: "Source Sans 3", sans-serif;
 
-@import "footer";
-@import "header";
-@import "links";
-@import "navigation";
-@import "typography";
+// Base
+@import "base/typography";
+
+// Components
+@import "components/buttons";
+@import "components/links";
+@import "components/slider";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+
+// Pages
+@import "pages/home";
+@import "pages/culture";
 
 body {
     margin: 0;

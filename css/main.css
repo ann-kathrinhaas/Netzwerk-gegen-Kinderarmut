@@ -324,7 +324,7 @@ a:hover {
 .module-wrapper .module .sport .alle-angebote:hover .arrow-icon,
 .module-wrapper .module .kultur .alle-angebote:hover .arrow-icon,
 .module-wrapper .module .veranstaltungen .alle-angebote:hover .arrow-icon {
-  content: url("../../assets/icons/ic_arrow-right-blue.svg");
+  content: url("../../assets/icons/ic_arrow-right-blue.svg") !important;
 }
 .module-wrapper .module .heading-with-marker .line-marker {
   width: 0.75rem;

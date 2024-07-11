@@ -1,7 +1,4 @@
 .module-wrapper {
-    width: 70vw;
-    margin: 10rem auto;
-
     &.hilfe-und-beratung {
         .stoerer {
             background: $pink;
@@ -43,10 +40,6 @@
     }
 
     .module {
-        max-width: 1024px;
-        margin: 0 auto;
-        padding: 0 2rem;
-
         &.stoerer,
         &.content {
             padding: 2.5rem 7rem;
@@ -57,11 +50,6 @@
         }
 
         .flex-module {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: auto;
-
             &.items {
                 justify-content: space-around;
                 height: 7rem;

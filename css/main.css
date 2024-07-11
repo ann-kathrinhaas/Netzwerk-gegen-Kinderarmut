@@ -28,6 +28,17 @@ body .module-wrapper {
   width: 70vw;
   margin: 10rem auto;
 }
+body .module-wrapper .module {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+body .module-wrapper .module .flex-module {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+}
 
 h1,
 h2,
@@ -209,10 +220,6 @@ a:hover {
   background: #34b6a2;
 }
 
-.module-wrapper {
-  width: 70vw;
-  margin: 10rem auto;
-}
 .module-wrapper.hilfe-und-beratung .stoerer {
   background: #ff7388;
 }
@@ -237,22 +244,11 @@ a:hover {
 .module-wrapper.kleidung .content {
   background: linear-gradient(to bottom, #c6fbff 0%, #8fd9cc 100%);
 }
-.module-wrapper .module {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
 .module-wrapper .module.stoerer, .module-wrapper .module.content {
   padding: 2.5rem 7rem;
 }
 .module-wrapper .module.stoerer {
   height: auto;
-}
-.module-wrapper .module .flex-module {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: auto;
 }
 .module-wrapper .module .flex-module.items {
   justify-content: space-around;

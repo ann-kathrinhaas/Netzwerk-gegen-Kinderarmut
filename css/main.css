@@ -102,7 +102,7 @@ a:hover {
 .slider {
   display: flex;
   background: rgba(255, 255, 255, 0.7);
-  border-radius: 2%;
+  border-radius: 20px;
   box-shadow: 2.5px 2px 1px rgba(0, 0, 0, 0.1);
   padding: 2rem;
 }

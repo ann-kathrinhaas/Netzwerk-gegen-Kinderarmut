@@ -301,6 +301,8 @@ body {
                     z-index: 1;
                     width: 5%;
                     height: 10%;
+                    border: none;
+                    background: none;
 
                     &:nth-of-type(1) {
                         content: url("/assets/icons/ic_arrow-left.svg");

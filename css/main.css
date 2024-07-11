@@ -216,6 +216,8 @@ body .module-wrapper .module .slider .slick-prev {
   z-index: 1;
   width: 5%;
   height: 10%;
+  border: none;
+  background: none;
 }
 body .module-wrapper .module .slider .slick-next:nth-of-type(1),
 body .module-wrapper .module .slider .slick-prev:nth-of-type(1) {

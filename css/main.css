@@ -102,7 +102,7 @@ a:hover {
 .module-wrapper.header {
   width: 100vw;
   margin: 0 auto;
-  background: url("../../assets/images/img_header-home.png") no-repeat fixed center;
+  background: url("https://ann-kathrinhaas.github.io/Netzwerk-gegen-Kinderarmut/assets/images/img_header-home.png") no-repeat fixed center;
   background-size: cover;
 }
 .module-wrapper.header .module {
@@ -324,7 +324,7 @@ a:hover {
 .module-wrapper .module .sport .alle-angebote:hover .arrow-icon,
 .module-wrapper .module .kultur .alle-angebote:hover .arrow-icon,
 .module-wrapper .module .veranstaltungen .alle-angebote:hover .arrow-icon {
-  content: url("../../assets/icons/ic_arrow-right-blue.svg") !important;
+  content: url("https://ann-kathrinhaas.github.io/Netzwerk-gegen-Kinderarmut/assets/icons/ic_arrow-right-blue.svg") !important;
 }
 .module-wrapper .module .heading-with-marker .line-marker {
   width: 0.75rem;

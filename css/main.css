@@ -19,6 +19,16 @@
   font-weight: normal;
   font-style: normal;
 }
+body {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+body .module-wrapper {
+  width: 70vw;
+  margin: 10rem auto;
+}
+
 h1,
 h2,
 h3,
@@ -198,92 +208,87 @@ a:hover {
   background: #34b6a2;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  color: #000000;
-}
-body .module-wrapper {
+.module-wrapper {
   width: 70vw;
   margin: 10rem auto;
 }
-body .module-wrapper.hilfe-und-beratung .stoerer {
+.module-wrapper.hilfe-und-beratung .stoerer {
   background: #ff7388;
 }
-body .module-wrapper.hilfe-und-beratung .content {
+.module-wrapper.hilfe-und-beratung .content {
   background: linear-gradient(to bottom, #ffcdd1 0%, #f07b84 100%);
 }
-body .module-wrapper.essen .stoerer {
+.module-wrapper.essen .stoerer {
   background: #fea623;
 }
-body .module-wrapper.essen .content {
+.module-wrapper.essen .content {
   background: linear-gradient(to bottom, #ffdeac 0%, #ffbe5e 100%);
 }
-body .module-wrapper.freizeit .stoerer {
+.module-wrapper.freizeit .stoerer {
   background: #42a2c4;
 }
-body .module-wrapper.freizeit .content {
+.module-wrapper.freizeit .content {
   background: linear-gradient(to bottom, #cee9fc 0%, #8fc5d9 100%);
 }
-body .module-wrapper.kleidung .stoerer {
+.module-wrapper.kleidung .stoerer {
   background: #34b6a2;
 }
-body .module-wrapper.kleidung .content {
+.module-wrapper.kleidung .content {
   background: linear-gradient(to bottom, #c6fbff 0%, #8fd9cc 100%);
 }
-body .module-wrapper .module {
+.module-wrapper .module {
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 2rem;
 }
-body .module-wrapper .module.stoerer, body .module-wrapper .module.content {
+.module-wrapper .module.stoerer, .module-wrapper .module.content {
   padding: 2.5rem 7rem;
 }
-body .module-wrapper .module.stoerer {
+.module-wrapper .module.stoerer {
   height: auto;
 }
-body .module-wrapper .module .flex-module {
+.module-wrapper .module .flex-module {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: auto;
 }
-body .module-wrapper .module .flex-module.items {
+.module-wrapper .module .flex-module.items {
   justify-content: space-around;
   height: 7rem;
 }
-body .module-wrapper .module .flex-module.items .item {
+.module-wrapper .module .flex-module.items .item {
   height: 5rem;
   display: flex;
   align-items: center;
 }
-body .module-wrapper .module .flex-module.items .item.item-bottom {
+.module-wrapper .module .flex-module.items .item.item-bottom {
   align-self: flex-end;
 }
-body .module-wrapper .module .flex-module.items .item.item-top {
+.module-wrapper .module .flex-module.items .item.item-top {
   align-self: flex-start;
 }
-body .module-wrapper .module .flex-module.items .item img {
+.module-wrapper .module .flex-module.items .item img {
   max-height: 100%;
   max-width: 100%;
   height: auto;
   width: auto;
 }
-body .module-wrapper .module .flex-module.icon-with-heading {
+.module-wrapper .module .flex-module.icon-with-heading {
   justify-content: flex-start;
   gap: 1rem;
 }
-body .module-wrapper .module .flex-module.icon-with-heading .icon {
+.module-wrapper .module .flex-module.icon-with-heading .icon {
   width: 3.5rem;
   height: 3.5rem;
 }
-body .module-wrapper .module .flex-module.icon-with-heading h2 {
+.module-wrapper .module .flex-module.icon-with-heading h2 {
   position: relative;
   display: inline-block;
   padding: 0 5px;
   z-index: 0;
 }
-body .module-wrapper .module .flex-module.icon-with-heading h2 > .line {
+.module-wrapper .module .flex-module.icon-with-heading h2 > .line {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -291,40 +296,40 @@ body .module-wrapper .module .flex-module.icon-with-heading h2 > .line {
   height: 50%;
   z-index: -1;
 }
-body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-hilfe-und-beratung {
+.module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-hilfe-und-beratung {
   background: #ff7388;
 }
-body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-essen {
+.module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-essen {
   background: #fea623;
 }
-body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-freizeit {
+.module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-freizeit {
   background: #42a2c4;
 }
-body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-kleidung {
+.module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-kleidung {
   background: #34b6a2;
 }
-body .module-wrapper .module .sport .heading-with-marker,
-body .module-wrapper .module .kultur .heading-with-marker,
-body .module-wrapper .module .veranstaltungen .heading-with-marker {
+.module-wrapper .module .sport .heading-with-marker,
+.module-wrapper .module .kultur .heading-with-marker,
+.module-wrapper .module .veranstaltungen .heading-with-marker {
   margin-top: 5rem;
   margin-bottom: -1rem;
 }
-body .module-wrapper .module .sport .alle-angebote,
-body .module-wrapper .module .kultur .alle-angebote,
-body .module-wrapper .module .veranstaltungen .alle-angebote {
+.module-wrapper .module .sport .alle-angebote,
+.module-wrapper .module .kultur .alle-angebote,
+.module-wrapper .module .veranstaltungen .alle-angebote {
   padding-left: 1.75rem;
 }
-body .module-wrapper .module .sport .alle-angebote:hover .blue,
-body .module-wrapper .module .kultur .alle-angebote:hover .blue,
-body .module-wrapper .module .veranstaltungen .alle-angebote:hover .blue {
+.module-wrapper .module .sport .alle-angebote:hover .blue,
+.module-wrapper .module .kultur .alle-angebote:hover .blue,
+.module-wrapper .module .veranstaltungen .alle-angebote:hover .blue {
   color: #42a2c4;
 }
-body .module-wrapper .module .sport .alle-angebote:hover .arrow-icon,
-body .module-wrapper .module .kultur .alle-angebote:hover .arrow-icon,
-body .module-wrapper .module .veranstaltungen .alle-angebote:hover .arrow-icon {
+.module-wrapper .module .sport .alle-angebote:hover .arrow-icon,
+.module-wrapper .module .kultur .alle-angebote:hover .arrow-icon,
+.module-wrapper .module .veranstaltungen .alle-angebote:hover .arrow-icon {
   content: url("/assets/icons/ic_arrow-right-blue.svg");
 }
-body .module-wrapper .module .heading-with-marker .line-marker {
+.module-wrapper .module .heading-with-marker .line-marker {
   width: 0.75rem;
   height: 2rem;
   background: #42a2c4;

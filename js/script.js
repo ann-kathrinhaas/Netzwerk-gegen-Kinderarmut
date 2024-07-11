@@ -1,6 +1,14 @@
 $(document).ready(function () {
     scrollToAnchor();
     setNavItemActive();
+
+    $('.slider').slick({
+        infinite: true,
+        dots: true,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
 });
 
 function scrollToAnchor() {
@@ -28,13 +36,3 @@ function setNavItemActive() {
         }
     })
 }
-
-$(document).ready(function () {
-    $('.slider').slick({
-        infinite: true,
-        dots: true,
-        arrows: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    });
-});

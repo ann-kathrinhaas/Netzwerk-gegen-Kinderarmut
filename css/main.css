@@ -82,6 +82,7 @@ a {
   text-decoration: none;
   font-family: "Source Sans 3", sans-serif;
   font-size: 1rem;
+  color: #000000;
 }
 a:hover {
   cursor: pointer;

@@ -42,59 +42,65 @@ $font-source-sans: 'Source Sans 3', sans-serif;
 
 body {
     color: $black;
-        
-        h1, h2, h3, h4, h5 {
-            font-family: $font-montserrat;
-        }
 
-        h1 {
-            font-size: 3rem;
-        }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: $font-montserrat;
+    }
 
-        h2 {
-            font-size: 2.5rem;
-        }
+    h1 {
+        font-size: 3rem;
+    }
 
-        h3 {
-            font-size: 2rem;
-        }
+    h2 {
+        font-size: 2.5rem;
+    }
 
-        h4 {
-            font-size: 1.5rem;
-        }
+    h3 {
+        font-size: 2rem;
+    }
 
-        h5 {
-            font-size: 1.25rem;
-        }
+    h4 {
+        font-size: 1.5rem;
+    }
 
-        .sub-heading {
-            font-size: 1.5rem;
-        }
+    h5 {
+        font-size: 1.25rem;
+    }
 
-        .bold {
-            font-weight: bold;
-        }
+    .sub-heading {
+        font-size: 1.5rem;
+    }
 
-        .semibold {
-            font-weight: 600;
-        }
+    .bold {
+        font-weight: bold;
+    }
 
-        .center {
-            text-align: center;
-        }
+    .semibold {
+        font-weight: 600;
+    }
 
-        p, a {
-            font-family: $font-source-sans; 
-            font-size: 1rem;
-        }
+    .center {
+        text-align: center;
+    }
 
-        a {
-            text-decoration: none;
-        }
+    p,
+    a {
+        font-family: $font-source-sans;
+        font-size: 1rem;
+    }
 
-        a:hover, button:hover {
-            cursor: pointer;
-        }
+    a {
+        text-decoration: none;
+    }
+
+    a:hover,
+    button:hover {
+        cursor: pointer;
+    }
 
     .module-wrapper {
         width: 80vw;
@@ -122,9 +128,9 @@ body {
             .text-wrapper {
                 color: $white;
 
-               .sub-heading {
-                   width: 50%;
-               }
+                .sub-heading {
+                    width: 50%;
+                }
             }
         }
 
@@ -167,9 +173,11 @@ body {
                 background: $green-gradient;
             }
         }
-        
+
         .module {
-            &.stoerer, &.content {
+
+            &.stoerer,
+            &.content {
                 padding: 2.5rem 7rem;
             }
 
@@ -181,14 +189,14 @@ body {
 
                 &.items {
                     justify-content: space-around;
-                    
-                    
+
+
                     .item {
-                       height: 4rem;
-                       width: auto;  
+                        height: 4rem;
+                        width: auto;
                     }
                 }
-               
+
                 &.icon-with-heading {
                     justify-content: flex-start;
                     gap: 1rem;
@@ -204,8 +212,8 @@ body {
                         padding: 0 5px;
                         z-index: 0;
                     }
-                  
-                      h2 > .line {
+
+                    h2>.line {
                         position: absolute;
                         bottom: -1px;
                         left: 0;
@@ -229,15 +237,16 @@ body {
                             background: $green;
                         }
 
-                      }
-                    
+                    }
+
                 }
             }
 
             .slider {
+                display: flex;
                 background: rgba($white, 0.7);
                 border-radius: 2%;
-                box-shadow:  2.5px 2px 1px rgba($black, 0.1);
+                box-shadow: 2.5px 2px 1px rgba($black, 0.1);
                 padding: 2rem;
 
                 .slider-item {
@@ -251,6 +260,7 @@ body {
                             img {
                                 width: -webkit-fill-available;
                             }
+
                         }
 
                         .slider-content {
@@ -265,7 +275,7 @@ body {
                                 &.btn-pink {
                                     color: $pink;
                                     border: 2px solid $pink;
-                                    
+
                                     &:hover {
                                         background: $pink;
                                     }
@@ -275,20 +285,45 @@ body {
                                     color: $white;
                                 }
                             }
-                        } 
+                        }
                     }
+                }
+
+                .slick-next,
+                .slick-prev {
+                    display: flex;
+                    position: absolute;
+                    flex-direction: row;
+                    align-items: center; // 2. vertically center contents
+                    justify-content: center;
+                    top: 45%;
+                    bottom: 0;
+                    z-index: 1;
+                    width: 5%;
+                    height: 10%;
+
+                }
+
+                .slick-next {
+                    right: 1%;
+                }
+
+                .slick-prev {
+                    left: 1%;
                 }
             }
 
-            .sport, .kultur, .veranstaltungen {
+            .sport,
+            .kultur,
+            .veranstaltungen {
                 .heading-with-marker {
                     margin-top: 5rem;
                     margin-bottom: -1rem;
                 }
 
-                .alle-angebote{
+                .alle-angebote {
                     padding-left: 1.75rem;
-                } 
+                }
 
                 .alle-angebote:hover {
                     .blue {
@@ -309,7 +344,7 @@ body {
                     margin-right: 1rem;
                 }
 
-               
+
             }
         }
 
@@ -323,7 +358,9 @@ body {
                 flex-direction: column;
                 padding: 4rem 0;
 
-                h5, a:last-of-type, .instagram-icon {
+                h5,
+                a:last-of-type,
+                .instagram-icon {
                     margin-bottom: 2rem;
                 }
 
@@ -333,7 +370,7 @@ body {
                 }
 
                 a {
-                     
+
 
                     &:hover {
                         color: $purple;

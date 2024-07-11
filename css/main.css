@@ -22,7 +22,11 @@
 body {
   color: #000000;
 }
-body h1, body h2, body h3, body h4, body h5 {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
   font-family: "Montserrat", sans-serif;
 }
 body h1 {
@@ -52,14 +56,16 @@ body .semibold {
 body .center {
   text-align: center;
 }
-body p, body a {
+body p,
+body a {
   font-family: "Source Sans 3", sans-serif;
   font-size: 1rem;
 }
 body a {
   text-decoration: none;
 }
-body a:hover, body button:hover {
+body a:hover,
+body button:hover {
   cursor: pointer;
 }
 body .module-wrapper {
@@ -163,6 +169,7 @@ body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-klei
   background: #34B6A2;
 }
 body .module-wrapper .module .slider {
+  display: flex;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 2%;
   box-shadow: 2.5px 2px 1px rgba(0, 0, 0, 0.1);
@@ -197,17 +204,44 @@ body .module-wrapper .module .slider .slider-item .flex-module .slider-content .
 body .module-wrapper .module .slider .slider-item .flex-module .slider-content .btn:hover {
   color: #FFFFFF;
 }
-body .module-wrapper .module .sport .heading-with-marker, body .module-wrapper .module .kultur .heading-with-marker, body .module-wrapper .module .veranstaltungen .heading-with-marker {
+body .module-wrapper .module .slider .slick-next,
+body .module-wrapper .module .slider .slick-prev {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  top: 45%;
+  bottom: 0;
+  z-index: 1;
+  width: 5%;
+  height: 10%;
+}
+body .module-wrapper .module .slider .slick-next {
+  right: 1%;
+}
+body .module-wrapper .module .slider .slick-prev {
+  left: 1%;
+}
+body .module-wrapper .module .sport .heading-with-marker,
+body .module-wrapper .module .kultur .heading-with-marker,
+body .module-wrapper .module .veranstaltungen .heading-with-marker {
   margin-top: 5rem;
   margin-bottom: -1rem;
 }
-body .module-wrapper .module .sport .alle-angebote, body .module-wrapper .module .kultur .alle-angebote, body .module-wrapper .module .veranstaltungen .alle-angebote {
+body .module-wrapper .module .sport .alle-angebote,
+body .module-wrapper .module .kultur .alle-angebote,
+body .module-wrapper .module .veranstaltungen .alle-angebote {
   padding-left: 1.75rem;
 }
-body .module-wrapper .module .sport .alle-angebote:hover .blue, body .module-wrapper .module .kultur .alle-angebote:hover .blue, body .module-wrapper .module .veranstaltungen .alle-angebote:hover .blue {
+body .module-wrapper .module .sport .alle-angebote:hover .blue,
+body .module-wrapper .module .kultur .alle-angebote:hover .blue,
+body .module-wrapper .module .veranstaltungen .alle-angebote:hover .blue {
   color: #42A2C4;
 }
-body .module-wrapper .module .sport .alle-angebote:hover .arrow-icon, body .module-wrapper .module .kultur .alle-angebote:hover .arrow-icon, body .module-wrapper .module .veranstaltungen .alle-angebote:hover .arrow-icon {
+body .module-wrapper .module .sport .alle-angebote:hover .arrow-icon,
+body .module-wrapper .module .kultur .alle-angebote:hover .arrow-icon,
+body .module-wrapper .module .veranstaltungen .alle-angebote:hover .arrow-icon {
   content: url("/assets/icons/ic_arrow-right-blue.svg");
 }
 body .module-wrapper .module .heading-with-marker .line-marker {
@@ -226,7 +260,9 @@ body .module-wrapper.footer .flex-module {
   flex-direction: column;
   padding: 4rem 0;
 }
-body .module-wrapper.footer .flex-module h5, body .module-wrapper.footer .flex-module a:last-of-type, body .module-wrapper.footer .flex-module .instagram-icon {
+body .module-wrapper.footer .flex-module h5,
+body .module-wrapper.footer .flex-module a:last-of-type,
+body .module-wrapper.footer .flex-module .instagram-icon {
   margin-bottom: 2rem;
 }
 body .module-wrapper.footer .flex-module .instagram-icon {

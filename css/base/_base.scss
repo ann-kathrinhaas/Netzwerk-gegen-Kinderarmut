@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: $black;
+
+    .module-wrapper {
+        width: 70vw;
+        margin: 10rem auto;
+
+        .module {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 0 2rem;
+
+            .flex-module {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: auto;
+            }
+        }
+    }
+}

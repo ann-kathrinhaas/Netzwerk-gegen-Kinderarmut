@@ -1,391 +1,58 @@
 /* COLORS */
-$white: #FFFFFF;
+$white: #ffffff;
 $black: #000000;
-$pink: #FF7388;
-$orange: #FEA623;
-$blue: #42A2C4;
-$green: #34B6A2;
-$purple: #9367CC;
+$pink: #ff7388;
+$orange: #fea623;
+$blue: #42a2c4;
+$green: #34b6a2;
+$purple: #9367cc;
 
 /* GRADIENTS */
-$pink-gradient: linear-gradient(to bottom, #FFCDD1 0%, #F07B84 100%);
-$orange-gradient: linear-gradient(to bottom, #FFDEAC 0%, #FFBE5E 100%);
-$blue-gradient: linear-gradient(to bottom, #CEE9FC 0%, #8FC5D9 100%);
-$green-gradient: linear-gradient(to bottom, #C6FBFF 0%, #8FD9CC 100%);
-$purple-gradient: linear-gradient(to bottom, #E6DCF7 0%, #C8CBEC 100%);
+$pink-gradient: linear-gradient(to bottom, #ffcdd1 0%, #f07b84 100%);
+$orange-gradient: linear-gradient(to bottom, #ffdeac 0%, #ffbe5e 100%);
+$blue-gradient: linear-gradient(to bottom, #cee9fc 0%, #8fc5d9 100%);
+$green-gradient: linear-gradient(to bottom, #c6fbff 0%, #8fd9cc 100%);
+$purple-gradient: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
 
 /* FONTS */
 @font-face {
-    font-family: 'Montserrat';
-    src: url('font/Montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-family: "Montserrat";
+    src: url("../font/Montserrat/Montserrat-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Source Sans 3';
-    src: url('font/Source_Sans_3/SourceSans3-SemiBold.ttf') format('truetype');
+    font-family: "Source Sans 3";
+    src: url("../font/Source_Sans_3/SourceSans3-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Source Sans 3';
-    src: url('font/Source_Sans_3/SourceSans3-Regular.ttf') format('truetype');
+    font-family: "Source Sans 3";
+    src: url("../font/Source_Sans_3/SourceSans3-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
-$font-montserrat: 'Montserrat', sans-serif;
-$font-source-sans: 'Source Sans 3', sans-serif;
-
-
-body {
-    color: $black;
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        font-family: $font-montserrat;
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 2.5rem;
-    }
-
-    h3 {
-        font-size: 2rem;
-    }
-
-    h4 {
-        font-size: 1.5rem;
-    }
-
-    h5 {
-        font-size: 1.25rem;
-    }
-
-    .sub-heading {
-        font-size: 1.5rem;
-    }
-
-    .bold {
-        font-weight: bold;
-    }
-
-    .semibold {
-        font-weight: 600;
-    }
-
-    .center {
-        text-align: center;
-    }
-
-    p,
-    a {
-        font-family: $font-source-sans;
-        font-size: 1rem;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    a:hover,
-    button:hover {
-        cursor: pointer;
-    }
-
-    .module-wrapper {
-        width: 80vw;
-        margin: 10rem auto;
-
-        &.header {
-            width: 100%;
-            margin: 0;
-            background: white url("/assets/images/img_header-home.png") no-repeat;
-
-            .module {
-                width: 80vw;
-                padding: 18rem 0 8rem 7rem;
-
-                &.stoerer {
-                    background: $purple-gradient;
-                    color: $purple;
-                }
-            }
-
-            .header-img {
-                width: 100%;
-            }
-
-            .text-wrapper {
-                color: $white;
-
-                .sub-heading {
-                    width: 50%;
-                }
-            }
-        }
-
-        &.hilfe-und-beratung {
-            .stoerer {
-                background: $pink;
-            }
-
-            .content {
-                background: $pink-gradient;
-            }
-        }
-
-        &.essen {
-            .stoerer {
-                background: $orange;
-            }
-
-            .content {
-                background: $orange-gradient;
-            }
-        }
-
-        &.freizeit {
-            .stoerer {
-                background: $blue;
-            }
-
-            .content {
-                background: $blue-gradient;
-            }
-        }
-
-        &.kleidung {
-            .stoerer {
-                background: $green;
-            }
-
-            .content {
-                background: $green-gradient;
-            }
-        }
-
-        .module {
-
-            &.stoerer,
-            &.content {
-                padding: 2.5rem 7rem;
-            }
-
-            .flex-module {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin: auto;
-
-                &.items {
-                    justify-content: space-around;
-
-
-                    .item {
-                        height: 4rem;
-                        width: auto;
-                    }
-                }
-
-                &.icon-with-heading {
-                    justify-content: flex-start;
-                    gap: 1rem;
-
-                    .icon {
-                        width: 3.5rem;
-                        height: 3.5rem;
-                    }
-
-                    h2 {
-                        position: relative;
-                        display: inline-block;
-                        padding: 0 5px;
-                        z-index: 0;
-                    }
-
-                    h2>.line {
-                        position: absolute;
-                        bottom: -1px;
-                        left: 0;
-                        width: 100%;
-                        height: 50%;
-                        z-index: -1;
-
-                        &.line-hilfe-und-beratung {
-                            background: $pink;
-                        }
-
-                        &.line-essen {
-                            background: $orange;
-                        }
-
-                        &.line-freizeit {
-                            background: $blue;
-                        }
-
-                        &.line-kleidung {
-                            background: $green;
-                        }
-
-                    }
-
-                }
-            }
-
-            .slider {
-                display: flex;
-                background: rgba($white, 0.7);
-                border-radius: 2%;
-                box-shadow: 2.5px 2px 1px rgba($black, 0.1);
-                padding: 2rem;
-
-                .slider-item {
-                    .flex-module {
-                        gap: 2rem;
-                        align-items: flex-start;
-
-                        .slider-img {
-                            width: 55%;
-
-                            img {
-                                width: -webkit-fill-available;
-                            }
-
-                        }
-
-                        .slider-content {
-                            width: 35%;
-
-                            .btn {
-                                padding: 0.7rem 1.5rem;
-                                border-radius: 7px;
-                                font-size: 1rem;
-                                background: none;
-
-                                &.btn-pink {
-                                    color: $pink;
-                                    border: 2px solid $pink;
-
-                                    &:hover {
-                                        background: $pink;
-                                    }
-                                }
-
-                                &:hover {
-                                    color: $white;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .slick-next,
-                .slick-prev {
-                    display: flex;
-                    position: absolute;
-                    flex-direction: row;
-                    align-items: center; // 2. vertically center contents
-                    justify-content: center;
-                    top: 45%;
-                    bottom: 0;
-                    z-index: 1;
-                    width: 5%;
-                    height: 10%;
-                    border: none;
-                    background: none;
-
-                    &:nth-of-type(1) {
-                        content: url("/assets/icons/ic_arrow-left.svg");
-                    }
-
-                    &:nth-of-type(2) {
-                        content: url("/assets/icons/ic_arrow-right.svg");
-                    }
-                }
-
-                .slick-next {
-                    right: 1%;
-                }
-
-                .slick-prev {
-                    left: 1%;
-                }
-            }
-
-            .sport,
-            .kultur,
-            .veranstaltungen {
-                .heading-with-marker {
-                    margin-top: 5rem;
-                    margin-bottom: -1rem;
-                }
-
-                .alle-angebote {
-                    padding-left: 1.75rem;
-                }
-
-                .alle-angebote:hover {
-                    .blue {
-                        color: $blue;
-                    }
-
-                    .arrow-icon {
-                        content: url("/assets/icons/ic_arrow-right-blue.svg");
-                    }
-                }
-            }
-
-            .heading-with-marker {
-                .line-marker {
-                    width: 0.75rem;
-                    height: 2rem;
-                    background: $blue;
-                    margin-right: 1rem;
-                }
-
-
-            }
-        }
-
-        &.footer {
-            background: $purple-gradient;
-            color: $purple;
-            width: 100%;
-            margin: 0;
-
-            .flex-module {
-                flex-direction: column;
-                padding: 4rem 0;
-
-                h5,
-                a:last-of-type,
-                .instagram-icon {
-                    margin-bottom: 2rem;
-                }
-
-                .instagram-icon {
-                    width: 2.5rem;
-                    height: auto;
-                }
-
-                a {
-
-
-                    &:hover {
-                        color: $purple;
-                    }
-                }
-            }
-        }
-    }
-}
+$font-montserrat: "Montserrat", sans-serif;
+$font-source-sans: "Source Sans 3", sans-serif;
+
+// Base
+@import "base/base";
+@import "base/typography";
+
+// Components
+@import "components/buttons";
+@import "components/links";
+@import "components/slider";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+
+// Pages
+@import "pages/home";
+@import "pages/culture";

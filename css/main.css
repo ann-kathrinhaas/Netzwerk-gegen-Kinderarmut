@@ -3,123 +3,35 @@
 /* FONTS */
 @font-face {
   font-family: "Montserrat";
-  src: url("font/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  src: url("../font/Montserrat/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Source Sans 3";
-  src: url("font/Source_Sans_3/SourceSans3-SemiBold.ttf") format("truetype");
+  src: url("../font/Source_Sans_3/SourceSans3-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Source Sans 3";
-  src: url("font/Source_Sans_3/SourceSans3-Regular.ttf") format("truetype");
+  src: url("../font/Source_Sans_3/SourceSans3-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 body {
+  margin: 0;
+  padding: 0;
   color: #000000;
 }
-body h1,
-body h2,
-body h3,
-body h4,
-body h5 {
-  font-family: "Montserrat", sans-serif;
-}
-body h1 {
-  font-size: 3rem;
-}
-body h2 {
-  font-size: 2.5rem;
-}
-body h3 {
-  font-size: 2rem;
-}
-body h4 {
-  font-size: 1.5rem;
-}
-body h5 {
-  font-size: 1.25rem;
-}
-body .sub-heading {
-  font-size: 1.5rem;
-}
-body .bold {
-  font-weight: bold;
-}
-body .semibold {
-  font-weight: 600;
-}
-body .center {
-  text-align: center;
-}
-body p,
-body a {
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 1rem;
-}
-body a {
-  text-decoration: none;
-}
-body a:hover,
-body button:hover {
-  cursor: pointer;
-}
 body .module-wrapper {
-  width: 80vw;
+  width: 70vw;
   margin: 10rem auto;
 }
-body .module-wrapper.header {
-  width: 100%;
-  margin: 0;
-  background: white url("/assets/images/img_header-home.png") no-repeat;
-}
-body .module-wrapper.header .module {
-  width: 80vw;
-  padding: 18rem 0 8rem 7rem;
-}
-body .module-wrapper.header .module.stoerer {
-  background: linear-gradient(to bottom, #E6DCF7 0%, #C8CBEC 100%);
-  color: #9367CC;
-}
-body .module-wrapper.header .header-img {
-  width: 100%;
-}
-body .module-wrapper.header .text-wrapper {
-  color: #FFFFFF;
-}
-body .module-wrapper.header .text-wrapper .sub-heading {
-  width: 50%;
-}
-body .module-wrapper.hilfe-und-beratung .stoerer {
-  background: #FF7388;
-}
-body .module-wrapper.hilfe-und-beratung .content {
-  background: linear-gradient(to bottom, #FFCDD1 0%, #F07B84 100%);
-}
-body .module-wrapper.essen .stoerer {
-  background: #FEA623;
-}
-body .module-wrapper.essen .content {
-  background: linear-gradient(to bottom, #FFDEAC 0%, #FFBE5E 100%);
-}
-body .module-wrapper.freizeit .stoerer {
-  background: #42A2C4;
-}
-body .module-wrapper.freizeit .content {
-  background: linear-gradient(to bottom, #CEE9FC 0%, #8FC5D9 100%);
-}
-body .module-wrapper.kleidung .stoerer {
-  background: #34B6A2;
-}
-body .module-wrapper.kleidung .content {
-  background: linear-gradient(to bottom, #C6FBFF 0%, #8FD9CC 100%);
-}
-body .module-wrapper .module.stoerer, body .module-wrapper .module.content {
-  padding: 2.5rem 7rem;
+body .module-wrapper .module {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 body .module-wrapper .module .flex-module {
   display: flex;
@@ -127,85 +39,104 @@ body .module-wrapper .module .flex-module {
   align-items: center;
   margin: auto;
 }
-body .module-wrapper .module .flex-module.items {
-  justify-content: space-around;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
 }
-body .module-wrapper .module .flex-module.items .item {
-  height: 4rem;
-  width: auto;
+
+h1 {
+  font-size: 3rem;
 }
-body .module-wrapper .module .flex-module.icon-with-heading {
-  justify-content: flex-start;
-  gap: 1rem;
+
+h2 {
+  font-size: 2.5rem;
 }
-body .module-wrapper .module .flex-module.icon-with-heading .icon {
-  width: 3.5rem;
-  height: 3.5rem;
+
+h3 {
+  font-size: 2rem;
 }
-body .module-wrapper .module .flex-module.icon-with-heading h2 {
-  position: relative;
-  display: inline-block;
-  padding: 0 5px;
-  z-index: 0;
+
+h4 {
+  font-size: 1.5rem;
 }
-body .module-wrapper .module .flex-module.icon-with-heading h2 > .line {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  z-index: -1;
+
+h5 {
+  font-size: 1.25rem;
 }
-body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-hilfe-und-beratung {
-  background: #FF7388;
+
+.sub-heading {
+  font-size: 1.5rem;
 }
-body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-essen {
-  background: #FEA623;
+
+.bold {
+  font-weight: bold;
 }
-body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-freizeit {
-  background: #42A2C4;
+
+.semibold {
+  font-weight: 600;
 }
-body .module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-kleidung {
-  background: #34B6A2;
+
+.center {
+  text-align: center;
 }
-body .module-wrapper .module .slider {
+
+p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1rem;
+  color: #000000;
+}
+a:hover {
+  cursor: pointer;
+}
+
+.slider {
   display: flex;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 2%;
   box-shadow: 2.5px 2px 1px rgba(0, 0, 0, 0.1);
   padding: 2rem;
 }
-body .module-wrapper .module .slider .slider-item .flex-module {
+.slider .slider-item .flex-module {
   gap: 2rem;
   align-items: flex-start;
 }
-body .module-wrapper .module .slider .slider-item .flex-module .slider-img {
+.slider .slider-item .flex-module .slider-img {
   width: 55%;
 }
-body .module-wrapper .module .slider .slider-item .flex-module .slider-img img {
+.slider .slider-item .flex-module .slider-img img {
   width: -webkit-fill-available;
 }
-body .module-wrapper .module .slider .slider-item .flex-module .slider-content {
+.slider .slider-item .flex-module .slider-content {
   width: 35%;
 }
-body .module-wrapper .module .slider .slider-item .flex-module .slider-content .btn {
+.slider .slider-item .flex-module .slider-content .btn {
   padding: 0.7rem 1.5rem;
   border-radius: 7px;
   font-size: 1rem;
   background: none;
 }
-body .module-wrapper .module .slider .slider-item .flex-module .slider-content .btn.btn-pink {
-  color: #FF7388;
-  border: 2px solid #FF7388;
+.slider .slider-item .flex-module .slider-content .btn.btn-pink {
+  color: #ff7388;
+  border: 2px solid #ff7388;
 }
-body .module-wrapper .module .slider .slider-item .flex-module .slider-content .btn.btn-pink:hover {
-  background: #FF7388;
+.slider .slider-item .flex-module .slider-content .btn.btn-pink:hover {
+  background: #ff7388;
 }
-body .module-wrapper .module .slider .slider-item .flex-module .slider-content .btn:hover {
-  color: #FFFFFF;
+.slider .slider-item .flex-module .slider-content .btn:hover {
+  color: #ffffff;
 }
-body .module-wrapper .module .slider .slick-next,
-body .module-wrapper .module .slider .slick-prev {
+.slider .slick-next,
+.slider .slick-prev {
   display: flex;
   position: absolute;
   flex-direction: row;
@@ -219,66 +150,251 @@ body .module-wrapper .module .slider .slick-prev {
   border: none;
   background: none;
 }
-body .module-wrapper .module .slider .slick-next:nth-of-type(1),
-body .module-wrapper .module .slider .slick-prev:nth-of-type(1) {
-  content: url("/assets/icons/ic_arrow-left.svg");
+.slider .slick-next:nth-of-type(1),
+.slider .slick-prev:nth-of-type(1) {
+  content: url("../assets/icons/ic_arrow-left.svg");
 }
-body .module-wrapper .module .slider .slick-next:nth-of-type(2),
-body .module-wrapper .module .slider .slick-prev:nth-of-type(2) {
-  content: url("/assets/icons/ic_arrow-right.svg");
+.slider .slick-next:nth-of-type(2),
+.slider .slick-prev:nth-of-type(2) {
+  content: url("../assets/icons/ic_arrow-right.svg");
 }
-body .module-wrapper .module .slider .slick-next {
+.slider .slick-next {
   right: 1%;
 }
-body .module-wrapper .module .slider .slick-prev {
+.slider .slick-prev {
   left: 1%;
 }
-body .module-wrapper .module .sport .heading-with-marker,
-body .module-wrapper .module .kultur .heading-with-marker,
-body .module-wrapper .module .veranstaltungen .heading-with-marker {
-  margin-top: 5rem;
-  margin-bottom: -1rem;
+
+.module-wrapper.header {
+  width: 100vw;
+  margin: 0 auto;
+  background: url("https://ann-kathrinhaas.github.io/Netzwerk-gegen-Kinderarmut/assets/images/img_header-home.png") no-repeat fixed center;
+  background-size: cover;
 }
-body .module-wrapper .module .sport .alle-angebote,
-body .module-wrapper .module .kultur .alle-angebote,
-body .module-wrapper .module .veranstaltungen .alle-angebote {
-  padding-left: 1.75rem;
+.module-wrapper.header .module {
+  width: 80vw;
+  padding: 18rem 0 8rem 7rem;
 }
-body .module-wrapper .module .sport .alle-angebote:hover .blue,
-body .module-wrapper .module .kultur .alle-angebote:hover .blue,
-body .module-wrapper .module .veranstaltungen .alle-angebote:hover .blue {
-  color: #42A2C4;
+.module-wrapper.header .module.stoerer {
+  background: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
+  color: #9367cc;
 }
-body .module-wrapper .module .sport .alle-angebote:hover .arrow-icon,
-body .module-wrapper .module .kultur .alle-angebote:hover .arrow-icon,
-body .module-wrapper .module .veranstaltungen .alle-angebote:hover .arrow-icon {
-  content: url("/assets/icons/ic_arrow-right-blue.svg");
+.module-wrapper.header .header-img {
+  width: 100%;
 }
-body .module-wrapper .module .heading-with-marker .line-marker {
-  width: 0.75rem;
-  height: 2rem;
-  background: #42A2C4;
-  margin-right: 1rem;
+.module-wrapper.header .text-wrapper {
+  color: #ffffff;
 }
-body .module-wrapper.footer {
-  background: linear-gradient(to bottom, #E6DCF7 0%, #C8CBEC 100%);
-  color: #9367CC;
+.module-wrapper.header .text-wrapper .sub-heading {
+  width: 50%;
+}
+
+.module-wrapper.footer {
+  background: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
+  color: #9367cc;
   width: 100%;
   margin: 0;
 }
-body .module-wrapper.footer .flex-module {
-  flex-direction: column;
+.module-wrapper.footer .flex-module {
+  flex-direction: column !important;
   padding: 4rem 0;
 }
-body .module-wrapper.footer .flex-module h5,
-body .module-wrapper.footer .flex-module a:last-of-type,
-body .module-wrapper.footer .flex-module .instagram-icon {
+.module-wrapper.footer .flex-module h5,
+.module-wrapper.footer .flex-module a:last-of-type,
+.module-wrapper.footer .flex-module .instagram-icon {
   margin-bottom: 2rem;
 }
-body .module-wrapper.footer .flex-module .instagram-icon {
+.module-wrapper.footer .flex-module .instagram-icon {
   width: 2.5rem;
   height: auto;
 }
-body .module-wrapper.footer .flex-module a:hover {
-  color: #9367CC;
+.module-wrapper.footer .flex-module a {
+  color: rgba(147, 103, 204, 0.5);
+}
+.module-wrapper.footer .flex-module a:hover {
+  color: #9367cc;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10vw;
+}
+.navigation .navbar {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.navigation .navbar .nav-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+  position: relative;
+}
+.navigation .navbar .nav-item.active span {
+  width: 100%;
+  right: 0;
+  transition: all 1s ease;
+}
+.navigation .navbar .nav-item a {
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+}
+.navigation .navbar .nav-item a.purple {
+  color: #9367cc;
+}
+.navigation .navbar .nav-item a.pink {
+  color: #ff7388;
+}
+.navigation .navbar .nav-item a.orange {
+  color: #fea623;
+}
+.navigation .navbar .nav-item a.blue {
+  color: #42a2c4;
+}
+.navigation .navbar .nav-item a.green {
+  color: #34b6a2;
+}
+.navigation .navbar .nav-item a:hover {
+  font-weight: 600;
+}
+.navigation .navbar .nav-item span {
+  position: absolute;
+  bottom: -0.5rem;
+  right: -100%;
+  height: 2px;
+  transition: all 1s ease;
+}
+.navigation .navbar .nav-item span.purple-line {
+  background: #9367cc;
+}
+.navigation .navbar .nav-item span.pink-line {
+  background: #ff7388;
+}
+.navigation .navbar .nav-item span.orange-line {
+  background: #fea623;
+}
+.navigation .navbar .nav-item span.blue-line {
+  background: #42a2c4;
+}
+.navigation .navbar .nav-item span.green-line {
+  background: #34b6a2;
+}
+
+.module-wrapper.hilfe-und-beratung .stoerer {
+  background: #ff7388;
+}
+.module-wrapper.hilfe-und-beratung .content {
+  background: linear-gradient(to bottom, #ffcdd1 0%, #f07b84 100%);
+}
+.module-wrapper.essen .stoerer {
+  background: #fea623;
+}
+.module-wrapper.essen .content {
+  background: linear-gradient(to bottom, #ffdeac 0%, #ffbe5e 100%);
+}
+.module-wrapper.freizeit .stoerer {
+  background: #42a2c4;
+}
+.module-wrapper.freizeit .content {
+  background: linear-gradient(to bottom, #cee9fc 0%, #8fc5d9 100%);
+}
+.module-wrapper.kleidung .stoerer {
+  background: #34b6a2;
+}
+.module-wrapper.kleidung .content {
+  background: linear-gradient(to bottom, #c6fbff 0%, #8fd9cc 100%);
+}
+.module-wrapper .module.stoerer, .module-wrapper .module.content {
+  padding: 2.5rem 7rem;
+}
+.module-wrapper .module.stoerer {
+  height: auto;
+}
+.module-wrapper .module .flex-module.items {
+  justify-content: space-around;
+  height: 7rem;
+}
+.module-wrapper .module .flex-module.items .item {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.module-wrapper .module .flex-module.items .item.item-bottom {
+  align-self: flex-end;
+}
+.module-wrapper .module .flex-module.items .item.item-top {
+  align-self: flex-start;
+}
+.module-wrapper .module .flex-module.items .item img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+.module-wrapper .module .flex-module.icon-with-heading {
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.module-wrapper .module .flex-module.icon-with-heading .icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.module-wrapper .module .flex-module.icon-with-heading h2 {
+  position: relative;
+  display: inline-block;
+  padding: 0 5px;
+  z-index: 0;
+}
+.module-wrapper .module .flex-module.icon-with-heading h2 > .line {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+}
+.module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-hilfe-und-beratung {
+  background: #ff7388;
+}
+.module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-essen {
+  background: #fea623;
+}
+.module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-freizeit {
+  background: #42a2c4;
+}
+.module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-kleidung {
+  background: #34b6a2;
+}
+.module-wrapper .module .sport .heading-with-marker,
+.module-wrapper .module .kultur .heading-with-marker,
+.module-wrapper .module .veranstaltungen .heading-with-marker {
+  margin-top: 5rem;
+  margin-bottom: -1rem;
+}
+.module-wrapper .module .sport .alle-angebote,
+.module-wrapper .module .kultur .alle-angebote,
+.module-wrapper .module .veranstaltungen .alle-angebote {
+  padding-left: 1.75rem;
+}
+.module-wrapper .module .sport .alle-angebote:hover .blue,
+.module-wrapper .module .kultur .alle-angebote:hover .blue,
+.module-wrapper .module .veranstaltungen .alle-angebote:hover .blue {
+  color: #42a2c4;
+}
+.module-wrapper .module .sport .alle-angebote:hover .arrow-icon,
+.module-wrapper .module .kultur .alle-angebote:hover .arrow-icon,
+.module-wrapper .module .veranstaltungen .alle-angebote:hover .arrow-icon {
+  content: url("https://ann-kathrinhaas.github.io/Netzwerk-gegen-Kinderarmut/assets/icons/ic_arrow-right-blue.svg") !important;
+}
+.module-wrapper .module .heading-with-marker .line-marker {
+  width: 0.75rem;
+  height: 2rem;
+  background: #42a2c4;
+  margin-right: 1rem;
 }/*# sourceMappingURL=main.css.map */

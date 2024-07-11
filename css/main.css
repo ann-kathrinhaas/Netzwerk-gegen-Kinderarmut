@@ -89,6 +89,24 @@ p {
   font-size: 1rem;
 }
 
+.btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: none;
+}
+.btn.btn-pink {
+  color: #ff7388;
+  border: 2px solid #ff7388;
+}
+.btn.btn-pink:hover {
+  background: #ff7388;
+}
+.btn:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
 a {
   text-decoration: none;
   font-family: "Source Sans 3", sans-serif;
@@ -118,22 +136,6 @@ a:hover {
 }
 .slider .slider-item .flex-module .slider-content {
   width: 35%;
-}
-.slider .slider-item .flex-module .slider-content .btn {
-  padding: 0.7rem 1.5rem;
-  border-radius: 7px;
-  font-size: 1rem;
-  background: none;
-}
-.slider .slider-item .flex-module .slider-content .btn.btn-pink {
-  color: #ff7388;
-  border: 2px solid #ff7388;
-}
-.slider .slider-item .flex-module .slider-content .btn.btn-pink:hover {
-  background: #ff7388;
-}
-.slider .slider-item .flex-module .slider-content .btn:hover {
-  color: #ffffff;
 }
 .slider .slick-next,
 .slider .slick-prev {

@@ -21,26 +21,6 @@
 
             .slider-content {
                 width: 35%;
-
-                .btn {
-                    padding: 0.7rem 1.5rem;
-                    border-radius: 7px;
-                    font-size: 1rem;
-                    background: none;
-
-                    &.btn-pink {
-                        color: $pink;
-                        border: 2px solid $pink;
-
-                        &:hover {
-                            background: $pink;
-                        }
-                    }
-
-                    &:hover {
-                        color: $white;
-                    }
-                }
             }
         }
     }

@@ -12,6 +12,9 @@
 
             .slider-img {
                 width: 55%;
+                margin-left: 5%;
+                margin-top: 5%;
+                margin-bottom: 2%;
 
                 img {
                     width: -webkit-fill-available;
@@ -20,7 +23,15 @@
             }
 
             .slider-content {
-                width: 35%;
+                width: 55%;
+                margin-right: 5%;
+                margin-top: -14%;
+
+                .slider-content p {
+                    opacity: 0%;
+                }
+
+
             }
         }
     }
@@ -45,11 +56,11 @@
         }
 
         &:nth-of-type(1) {
-            content: url("../assets/icons/ic_arrow-left.svg");
+            content: url("../assets/icons/arrows/ic_arrow-left-pink.svg");
         }
 
         &:nth-of-type(2) {
-            content: url("../assets/icons/ic_arrow-right.svg");
+            content: url("../assets/icons/arrows/ic_arrow-right-pink.svg");
         }
     }
 
@@ -60,4 +71,37 @@
     .slick-prev {
         left: 1%;
     }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 10px; //Abstand unten
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .slick-dots li {
+        margin-top: 0;
+        margin-right: 15px;
+    }
+
+    .slick-dots li button {
+        display: none;
+    }
+    
+    .slick-dots li {
+        width: 74px; //width line
+        height: 5px; // height line
+        background-color: $white; 
+        border-radius: 2px; //round
+        transition: background-color 0.3s;
+    }
+    
+    .slick-dots li.slick-active {
+        background-color: $pink; 
+    }
+
 }

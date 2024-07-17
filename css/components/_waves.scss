@@ -1,0 +1,16 @@
+.wave {
+    width: 100vw;
+    height: 13rem;
+
+    &.header-wave {
+        position: relative;
+        top: -13rem;
+        margin-bottom: -18rem;
+        margin-top: 4rem;
+    }
+
+    &.footer-wave {
+        position: relative;
+        bottom: -4rem;
+    }
+}

@@ -1,9 +1,12 @@
 .module-wrapper{
   &.footer {
-    background: $purple-gradient;
-    color: $purple;
     width: 100%;
     margin: 0;
+
+    &.footer-home {
+        background: $purple-gradient;
+        color: $purple;  
+    }
 
     .flex-module {
         flex-direction: column !important;
@@ -19,14 +22,6 @@
             width: 2.5rem;
             height: auto;
         }
-
-        a {
-            color: rgba($purple, 0.5);
-
-            &:hover {
-                color: $purple;
-            }
-        }
     }
 }  
-}  
+}

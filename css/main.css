@@ -20,6 +20,8 @@
   font-weight: normal;
   font-style: normal;
 }
+/* Sizes */
+/* Media Queries */
 body {
   margin: 0;
   padding: 0;
@@ -142,6 +144,20 @@ a:hover {
   cursor: pointer;
 }
 
+.footer-home a {
+  color: rgba(147, 103, 204, 0.5);
+}
+.footer-home a:hover {
+  color: #9367cc;
+}
+
+.footer-culture a {
+  color: rgba(66, 162, 196, 0.5);
+}
+.footer-culture a:hover {
+  color: #42a2c4;
+}
+
 .slider {
   display: flex;
   background: rgba(255, 255, 255, 0.7);
@@ -208,11 +224,35 @@ a:hover {
   left: 1%;
 }
 
+.wave {
+  width: 100vw;
+  height: 13rem;
+}
+.wave.header-wave {
+  position: relative;
+  top: -13rem;
+  margin-bottom: -18rem;
+  margin-top: 4rem;
+}
+.wave.footer-wave {
+  position: relative;
+  bottom: -4rem;
+}
+
 .module-wrapper.header {
   width: 100vw;
+  min-height: 40vh;
   margin: 0 auto;
-  background: url("https://ann-kathrinhaas.github.io/Netzwerk-gegen-Kinderarmut/assets/images/img_header-home.png") no-repeat fixed center;
   background-size: cover;
+}
+.module-wrapper.header.header-home {
+  background: url("https://ann-kathrinhaas.github.io/Netzwerk-gegen-Kinderarmut/assets/images/img_header-home.png") no-repeat fixed center;
+}
+.module-wrapper.header.header-culture {
+  background: url("https://ann-kathrinhaas.github.io/Netzwerk-gegen-Kinderarmut/assets/images/img_header-kultur.png") no-repeat fixed center;
+}
+.module-wrapper.header .header-img {
+  width: 100vw;
 }
 .module-wrapper.header .module {
   width: 80vw;
@@ -233,10 +273,12 @@ a:hover {
 }
 
 .module-wrapper.footer {
-  background: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
-  color: #9367cc;
   width: 100%;
   margin: 0;
+}
+.module-wrapper.footer.footer-home {
+  background: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
+  color: #9367cc;
 }
 .module-wrapper.footer .flex-module {
   flex-direction: column !important;
@@ -251,18 +293,13 @@ a:hover {
   width: 2.5rem;
   height: auto;
 }
-.module-wrapper.footer .flex-module a {
-  color: rgba(147, 103, 204, 0.5);
-}
-.module-wrapper.footer .flex-module a:hover {
-  color: #9367cc;
-}
 
 .navigation {
   position: fixed;
   top: 0;
   right: 0;
   width: 10vw;
+  z-index: 1;
 }
 .navigation .navbar {
   margin: 4rem 0;
@@ -380,40 +417,6 @@ a:hover {
   height: auto;
   width: auto;
 }
-.module-wrapper .module .flex-module.icon-with-heading {
-  justify-content: flex-start;
-  gap: 1rem;
-}
-.module-wrapper .module .flex-module.icon-with-heading .icon {
-  width: 3.5rem;
-  height: 3.5rem;
-}
-.module-wrapper .module .flex-module.icon-with-heading h2 {
-  position: relative;
-  display: inline-block;
-  padding: 0 5px;
-  z-index: 0;
-}
-.module-wrapper .module .flex-module.icon-with-heading h2 > .line {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  z-index: -1;
-}
-.module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-hilfe-und-beratung {
-  background: #ff7388;
-}
-.module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-essen {
-  background: #fea623;
-}
-.module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-freizeit {
-  background: #42a2c4;
-}
-.module-wrapper .module .flex-module.icon-with-heading h2 > .line.line-kleidung {
-  background: #34b6a2;
-}
 .module-wrapper .module .sport .heading-with-marker,
 .module-wrapper .module .kultur .heading-with-marker,
 .module-wrapper .module .veranstaltungen .heading-with-marker {
@@ -434,12 +437,6 @@ a:hover {
 .module-wrapper .module .kultur .alle-angebote:hover .arrow-icon,
 .module-wrapper .module .veranstaltungen .alle-angebote:hover .arrow-icon {
   content: url("https://ann-kathrinhaas.github.io/Netzwerk-gegen-Kinderarmut/assets/icons/ic_arrow-right-blue.svg") !important;
-}
-.module-wrapper .module .heading-with-marker .line-marker {
-  width: 0.75rem;
-  height: 2rem;
-  background: #42a2c4;
-  margin-right: 1rem;
 }
 
 .culture {

@@ -30,9 +30,8 @@ function setNavItemActive() {
                 activeLink.parent().addClass('active');
             }
         } else {
-            // Überprüfe den aktuellen Seitennamen
             const currentPath = window.location.pathname.split("/").pop();
-            if (currentPath === "culture.html") { // Beispiel: kultur.html ist die Unterseite
+            if (currentPath === "culture.html") {
                 const freizeitLink = $("a[href$='#freizeit']");
                 if (freizeitLink.length) {
                     freizeitLink.parent().addClass('active');
@@ -48,7 +47,6 @@ function setNavItemActive() {
 
     updateActiveClass();
 
-    // Setze die 'active'-Klasse bei Änderungen des Ankers (z.B. bei Scrollen)
     $(window).on('hashchange', function() {
         updateActiveClass();
     });

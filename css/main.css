@@ -257,13 +257,6 @@ a:hover {
   width: 100vw;
   min-height: 40vh;
   margin: 0 auto;
-  background-size: cover;
-}
-.module-wrapper.header.header-home {
-  background: url("https://ann-kathrinhaas.github.io/Netzwerk-gegen-Kinderarmut/assets/images/img_header-home.png") no-repeat fixed center;
-}
-.module-wrapper.header.header-culture {
-  background: url("https://ann-kathrinhaas.github.io/Netzwerk-gegen-Kinderarmut/assets/images/img_header-kultur.png") no-repeat fixed center;
 }
 .module-wrapper.header .header-img {
   width: 100vw;

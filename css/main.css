@@ -226,17 +226,17 @@ a:hover {
 
 .wave {
   width: 100vw;
-  height: 13rem;
+  height: 10rem;
 }
 .wave.header-wave {
   position: relative;
-  top: -13rem;
+  top: -14rem;
   margin-bottom: -18rem;
   margin-top: 4rem;
 }
 .wave.footer-wave {
   position: relative;
-  bottom: -4rem;
+  bottom: -5.5rem;
 }
 
 .module-wrapper.header {

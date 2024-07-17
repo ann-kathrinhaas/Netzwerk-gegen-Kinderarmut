@@ -1,7 +1,8 @@
 $(document).ready(function () {
-    scrollToAnchor();
-    setNavItemActive();
-    handleNavLinkClick();
+    scrollToAnchor();       // Scrollen zu Ankern
+    setNavItemActive();     // Setzt den aktiven Navigationspunkt beim Laden der Seite
+    handleNavLinkClick();   // Klicks auf Navigationslinks
+    // updateNavOnScroll();    // Aktualisiert den aktiven Navigationspunkt basierend auf der Scroll-Position
 });
 
 function scrollToAnchor() {
@@ -31,13 +32,13 @@ function setNavItemActive() {
             }
         } else {
             const currentPath = window.location.pathname.split("/").pop();
-            if (currentPath === "culture.html") {
+            if (currentPath === "culture.html") { // Auf der Kulturseite wird der Navigationspunkt 'Freizeit' active
                 const freizeitLink = $("a[href$='#freizeit']");
                 if (freizeitLink.length) {
                     freizeitLink.parent().addClass('active');
                 }
             } else {
-                const homeLink = $("a[href*='#home']");
+                const homeLink = $("a[href*='#home']"); // Von Kulturseite auf Homepage -> Navigationspunkt 'Home' active
                 if (homeLink.length) {
                     homeLink.parent().addClass('active');
                 }
@@ -58,6 +59,20 @@ function handleNavLinkClick() {
         $(this).parent().addClass("active");
     });
 }
+
+function updateNavOnScroll() {
+    var scrollDistance = $(window).scrollTop();
+
+    // Iterate through each section to find the current one
+    $('.module-wrapper').each(function(i) {
+      if ($(this).position().top <= scrollDistance) {
+        $('.nav-item.active').removeClass('active');
+        $('.nav-item').eq(i).addClass('active');
+      }
+    });
+  }
+
+$(window).scroll(updateNavOnScroll).scroll();
 
 $(document).ready(function () {
     $('.slider').slick({

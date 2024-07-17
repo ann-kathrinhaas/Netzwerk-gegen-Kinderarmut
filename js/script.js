@@ -1,6 +1,7 @@
 $(document).ready(function () {
     scrollToAnchor();
     setNavItemActive();
+    handleNavLinkClick();
 });
 
 function scrollToAnchor() {
@@ -19,14 +20,45 @@ function scrollToAnchor() {
 
 
 function setNavItemActive() {
-    $(".js-nav-item").on("click", function () {
-        if ($(this).hasClass("active")) {
-            $(this).removeClass("active");
+    function updateActiveClass() {
+        const hash = window.location.hash;
+        $(".js-nav-item").removeClass("active");
+
+        if (hash) {
+            const activeLink = $(`a[href$="${hash}"]`);
+            if (activeLink.length) {
+                activeLink.parent().addClass('active');
+            }
         } else {
-            $(this).addClass("active");
-            $(this).siblings(".js-nav-item").removeClass("active");
+            // Überprüfe den aktuellen Seitennamen
+            const currentPath = window.location.pathname.split("/").pop();
+            if (currentPath === "culture.html") { // Beispiel: kultur.html ist die Unterseite
+                const freizeitLink = $("a[href$='#freizeit']");
+                if (freizeitLink.length) {
+                    freizeitLink.parent().addClass('active');
+                }
+            } else {
+                const homeLink = $("a[href*='#home']");
+                if (homeLink.length) {
+                    homeLink.parent().addClass('active');
+                }
+            }
         }
-    })
+    }
+
+    updateActiveClass();
+
+    // Setze die 'active'-Klasse bei Änderungen des Ankers (z.B. bei Scrollen)
+    $(window).on('hashchange', function() {
+        updateActiveClass();
+    });
+}
+
+function handleNavLinkClick() {
+    $(".js-nav-item a").on("click", function () {
+        $(".js-nav-item").removeClass("active");
+        $(this).parent().addClass("active");
+    });
 }
 
 $(document).ready(function () {

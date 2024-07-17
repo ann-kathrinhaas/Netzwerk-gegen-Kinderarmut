@@ -47,6 +47,10 @@
 
         &.stoerer {
             height: auto;
+
+            &.stoerer-header {
+                width: 100vw;
+            }
         }
 
         .flex-module {

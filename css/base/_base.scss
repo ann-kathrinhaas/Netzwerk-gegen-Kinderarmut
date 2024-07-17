@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     color: $black;
-    // width: $page-max-width;
 
     .module-wrapper {
         width: 70vw;
@@ -18,6 +17,21 @@ body {
                 flex-direction: row;
                 align-items: center;
                 margin: auto;
+            }
+
+            &.stoerer-header {
+                width: 100%;
+                height: 12rem;
+                margin: 0;
+                max-width: 100vw;
+                padding-left: 0;
+                padding-right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: -2rem;
+                z-index: -1;
             }
         }
     }

@@ -42,6 +42,20 @@ body .module-wrapper .module .flex-module {
   align-items: center;
   margin: auto;
 }
+body .module-wrapper .module.stoerer-header {
+  width: 100%;
+  height: 12rem;
+  margin: 0;
+  max-width: 100vw;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -2rem;
+  z-index: -1;
+}
 
 h1,
 h2,
@@ -225,7 +239,7 @@ a:hover {
 }
 
 .wave {
-  width: 100vw;
+  width: 100%;
   height: 10rem;
 }
 .wave.header-wave {
@@ -395,6 +409,9 @@ a:hover {
 }
 .module-wrapper .module.stoerer {
   height: auto;
+}
+.module-wrapper .module.stoerer.stoerer-header {
+  width: 100vw;
 }
 .module-wrapper .module .flex-module.items {
   justify-content: space-around;

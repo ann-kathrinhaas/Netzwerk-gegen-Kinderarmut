@@ -2,6 +2,11 @@ $(document).ready(function () {
     scrollToAnchor();       // Scrollen zu Ankern
     setNavItemActive();     // Setzt den aktiven Navigationspunkt beim Laden der Seite
     handleNavLinkClick();   // Klicks auf Navigationslinks
+
+    const currentPath = window.location.pathname.split("/").pop();
+    if (currentPath !== "culture.html") {
+        $(window).scroll(updateNavOnScroll).scroll();
+    }
 });
 
 function scrollToAnchor() {
@@ -12,14 +17,12 @@ function scrollToAnchor() {
         const $target = $(target);
 
         if (target && $target.length) {
-            if (window.location.hash !== target) {
-                e.preventDefault();
-                $("html, body").stop().animate({
-                    scrollTop: $target.offset().top - offsetScroll
-                }, 600, "swing", function () {
-                    window.location.hash = target;
-                });
-            }
+            e.preventDefault();
+            $("html, body").stop().animate({
+                scrollTop: $target.offset().top - offsetScroll
+            }, 600, "swing", function () {
+                window.location.hash = target;
+            });
         } else if (target === '#home') {
             e.preventDefault();
             $("html, body").stop().animate({
@@ -75,14 +78,12 @@ function updateNavOnScroll() { // Aktualisiert den aktiven Navigationspunkt basi
     var scrollDistance = $(window).scrollTop();
 
     $('.module-wrapper').each(function(i) {
-      if ($(this).position().top <= scrollDistance) {
-        $('.nav-item.active').removeClass('active');
-        $('.nav-item').eq(i).addClass('active');
-      }
+        if ($(this).position().top <= scrollDistance) {
+            $('.nav-item.active').removeClass('active');
+            $('.nav-item').eq(i).addClass('active');
+        }
     });
-  }
-
-$(window).scroll(updateNavOnScroll).scroll();
+}
 
 $(document).ready(function () {
     $('.slider').slick({
@@ -91,5 +92,4 @@ $(document).ready(function () {
         arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1
-    });
-});
+    })})

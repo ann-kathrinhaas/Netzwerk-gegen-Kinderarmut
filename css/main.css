@@ -263,7 +263,16 @@ a:hover {
 }
 .module-wrapper.header .module {
   width: 80vw;
-  padding: 18rem 0 8rem 7rem;
+  padding: 18rem 0 8rem 0;
+}
+.module-wrapper.header .module.header-text {
+  position: relative;
+  bottom: 48rem;
+  margin-bottom: -49rem;
+  color: #ffffff;
+}
+.module-wrapper.header .module.header-text .sub-heading {
+  width: 50%;
 }
 .module-wrapper.header .module.stoerer {
   background: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);

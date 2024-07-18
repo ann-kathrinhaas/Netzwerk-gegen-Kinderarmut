@@ -10,7 +10,18 @@
 
         .module {
             width: 80vw;
-            padding: 18rem 0 8rem 7rem;
+            padding: 18rem 0 8rem 0;
+
+            &.header-text {
+                position: relative;
+                bottom: 48rem;
+                margin-bottom: -49rem;
+                color: $white;
+
+                .sub-heading {
+                    width: 50%;
+                }
+            }
 
             &.stoerer {
                 background: $purple-gradient;

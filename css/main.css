@@ -287,6 +287,9 @@ a:hover {
   background: linear-gradient(to bottom, #e6dcf7 0%, #c8cbec 100%);
   color: #9367cc;
 }
+.module-wrapper.footer.footer-culture {
+  color: #42a2c4;
+}
 .module-wrapper.footer .flex-module {
   flex-direction: column !important;
   padding: 4rem 0;

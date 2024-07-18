@@ -31,7 +31,6 @@ function scrollToAnchor() {
     });
 }
 
-
 function setNavItemActive() {
     function updateActiveClass() {
         const hash = window.location.hash;

@@ -2,20 +2,32 @@ $(document).ready(function () {
     scrollToAnchor();       // Scrollen zu Ankern
     setNavItemActive();     // Setzt den aktiven Navigationspunkt beim Laden der Seite
     handleNavLinkClick();   // Klicks auf Navigationslinks
-    // updateNavOnScroll();    // Aktualisiert den aktiven Navigationspunkt basierend auf der Scroll-Position
 });
 
 function scrollToAnchor() {
     const offsetScroll = 88;
 
     $("a[href^='#'], a[href^='/#']").on("click", function (e) {
-        e.preventDefault();
         const target = this.hash;
         const $target = $(target);
 
-        $("html, body").stop().animate({
-            scrollTop: $target.offset().top - offsetScroll
-        }, 600, "swing");
+        if (target && $target.length) {
+            if (window.location.hash !== target) {
+                e.preventDefault();
+                $("html, body").stop().animate({
+                    scrollTop: $target.offset().top - offsetScroll
+                }, 600, "swing", function () {
+                    window.location.hash = target;
+                });
+            }
+        } else if (target === '#home') {
+            e.preventDefault();
+            $("html, body").stop().animate({
+                scrollTop: 0
+            }, 600, "swing", function () {
+                window.location.hash = '#home';
+            });
+        }
     });
 }
 
@@ -60,10 +72,9 @@ function handleNavLinkClick() {
     });
 }
 
-function updateNavOnScroll() {
+function updateNavOnScroll() { // Aktualisiert den aktiven Navigationspunkt basierend auf der Scroll-Position
     var scrollDistance = $(window).scrollTop();
 
-    // Iterate through each section to find the current one
     $('.module-wrapper').each(function(i) {
       if ($(this).position().top <= scrollDistance) {
         $('.nav-item.active').removeClass('active');

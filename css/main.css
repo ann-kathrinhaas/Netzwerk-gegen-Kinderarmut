@@ -127,7 +127,7 @@ a:hover {
   /* Media query for ensuring the look on desktop screens */
 }
 .slider .slider-item .flex-module {
-  gap: 2rem;
+  gap: 5rem;
   align-items: flex-start;
 }
 .slider .slider-item .flex-module .slider-img {

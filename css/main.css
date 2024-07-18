@@ -124,6 +124,7 @@ a:hover {
   border-radius: 20px;
   box-shadow: 2.5px 2px 1px rgba(0, 0, 0, 0.1);
   padding: 2rem;
+  /* Media query for ensuring the look on desktop screens */
 }
 .slider .slider-item .flex-module {
   gap: 2rem;
@@ -205,6 +206,24 @@ a:hover {
 }
 .slider .slick-dots li.slick-active {
   background-color: #ff7388;
+}
+@media (max-width: 1400px) {
+  .slider .slider {
+    padding: 1.5rem;
+  }
+  .slider .slider-item .flex-module .slider-img,
+  .slider .slider-item .flex-module .slider-content {
+    width: 45%;
+    margin: 0;
+  }
+  .slider .slider-item .flex-module .slider-content {
+    margin-top: 0;
+    padding: 0;
+  }
+  .slider .slick-prev,
+  .slider .slick-next {
+    width: 8%;
+  }
 }
 
 .module-wrapper.header {

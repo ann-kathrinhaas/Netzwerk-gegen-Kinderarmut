@@ -91,17 +91,43 @@
     .slick-dots li button {
         display: none;
     }
-    
+
     .slick-dots li {
         width: 74px; //width line
         height: 5px; // height line
-        background-color: $white; 
+        background-color: $white;
         border-radius: 2px; //round
         transition: background-color 0.3s;
     }
-    
+
     .slick-dots li.slick-active {
-        background-color: $pink; 
+        background-color: $pink;
     }
 
+    /* Media query for ensuring the look on desktop screens */
+@media (max-width: 1400px) {
+    .slider {
+        padding: 1.5rem;
+    }
+
+    .slider-item .flex-module {
+        .slider-img,
+        .slider-content {
+            width: 45%;
+            margin: 0;
+        }
+
+        .slider-content {
+            margin-top: 0;
+            padding: 0;
+        }
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 8%;
+    }
 }
+
+}
+

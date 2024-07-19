@@ -67,3 +67,23 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .module-wrapper {
+        &.header {
+            .header-img {
+                height: 90vh;
+            }
+            
+            .module {
+                &.header-text {
+                    bottom: 46rem;
+    
+                    .sub-heading {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

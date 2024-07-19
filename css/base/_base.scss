@@ -79,4 +79,24 @@ body {
             }
         }
     }
+
+    @media (max-width: 480px) {
+        .module-wrapper {
+            .module {
+                &.content, &.stoerer {
+                    padding: 2.5rem 2rem;
+                }
+
+                &.stoerer {
+                    margin: -5px 0 0 0;
+
+                    &.stoerer-header {
+                        padding: 0;
+                        margin-bottom: 7rem;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
 }

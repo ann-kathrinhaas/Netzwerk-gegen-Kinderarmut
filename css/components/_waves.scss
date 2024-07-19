@@ -9,6 +9,10 @@
         margin-top: 4rem;
     }
 
+    &.mobile-wave {
+        display: none;
+    }
+
     &.footer-wave {
         position: relative;
         bottom: -5.5rem;
@@ -56,6 +60,19 @@
     .wave {
         &.header-wave {
             top: -17rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .wave {
+        &.header-wave {
+            z-index: 2;
+        }
+
+        &.mobile-wave {
+            display: block;
+            margin-bottom: -13rem;
         }
     }
 }

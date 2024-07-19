@@ -115,8 +115,67 @@
                     height: 4rem;
 
                     .item {
-                       height: 4rem;
+                        height: 4rem;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .module-wrapper {
+        &.hilfe-und-beratung,
+        &.essen,
+        &.freizeit,
+        &.kleidung {
+            display: flex;
+            flex-direction: column;
+
+            .order-1-on-mobile {
+                order: 1;
+                z-index: -1;
+            }
+
+            .order-2-on-mobile {
+                order: 2;
+            }
+        }
+
+        &.hilfe-und-beratung {
+            .stoerer {
+                background: $pink-m;
+            }
+        }
+
+        &.essen {
+            .stoerer {
+                background: $orange-m;
+            }
+        }
+
+        &.freizeit {
+            .stoerer {
+                background: $blue-m;
+            }
+        }
+
+        &.kleidung {
+            .stoerer {
+                background: $green-m;
+            }
+        }
+
+        .module {
+            .sport,
+            .kultur,
+            .veranstaltungen {
+                .heading-with-marker {
+                    margin-left: -2rem;
+                }
+
+                .alle-angebote {
+                    padding-left: 0;
                 }
             }
         }

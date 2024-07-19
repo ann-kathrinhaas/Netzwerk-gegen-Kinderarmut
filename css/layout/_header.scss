@@ -42,3 +42,28 @@
         }
     }
 }
+
+@media (max-width: 1023px) {
+    .module-wrapper {
+        &.header {
+            .module {
+                padding-top: 24rem;
+
+                &.header-text {
+                    // margin-bottom: -39.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .module-wrapper {
+        &.header {
+            .header-img {
+                height: 40rem;
+                object-fit: cover;
+            }
+        }
+    }
+}

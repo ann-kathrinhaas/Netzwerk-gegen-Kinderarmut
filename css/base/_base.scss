@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     color: $black;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 
     .module-wrapper {
         width: 70vw;
@@ -11,6 +13,11 @@ body {
             max-width: 1024px;
             margin: 0 auto;
             padding: 0 2rem;
+
+            &.test {
+                max-width: unset;
+                padding: 0;
+            }
 
             .flex-module {
                 display: flex;
@@ -32,6 +39,43 @@ body {
                 position: relative;
                 top: -2rem;
                 z-index: -1;
+            }
+        }
+    }
+
+    @media (max-width: 1023px) {
+        .module-wrapper {
+            width: 100vw;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .module-wrapper {
+            .module {
+                &.stoerer-header {
+                    margin-top: -2rem;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .module-wrapper {
+            .module {
+                &.stoerer-header {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 510px) {
+        .module-wrapper {
+            .module {
+                &.stoerer-header {
+                    margin-top: 0rem;
+                }
             }
         }
     }

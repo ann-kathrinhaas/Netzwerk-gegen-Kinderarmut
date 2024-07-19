@@ -14,3 +14,48 @@
         bottom: -5.5rem;
     }
 }
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .wave {
+        height: 7rem;
+        z-index: 1;
+
+        &.header-wave {
+           top: -18rem;
+        }
+
+        &.footer-wave {
+            bottom: -3.5rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .wave {
+        height: 6rem;
+
+        &.header-wave {
+            top: -14.5rem;
+        }
+
+        &.footer-wave {
+            bottom: -3.5rem;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .wave {
+        &.header-wave {
+            top: -15.5rem;
+        }
+    }
+}
+
+@media (max-width: 503px) {
+    .wave {
+        &.header-wave {
+            top: -17rem;
+        }
+    }
+}

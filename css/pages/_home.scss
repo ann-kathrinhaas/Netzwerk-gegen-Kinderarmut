@@ -47,10 +47,6 @@
 
         &.stoerer {
             height: auto;
-
-            &.stoerer-header {
-                width: 100vw;
-            }
         }
 
         .flex-module {
@@ -100,6 +96,27 @@
 
                 .arrow-icon {
                     content: url("https://ann-kathrinhaas.github.io/Netzwerk-gegen-Kinderarmut/assets/icons/ic_arrow-right-blue.svg") !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .module-wrapper {
+        .module {
+            &.content,
+            &.stoerer {
+                padding: 2.5rem 4rem;
+            }
+
+            .flex-module {
+                &.items {
+                    height: 4rem;
+
+                    .item {
+                       height: 4rem;
+                    }
                 }
             }
         }

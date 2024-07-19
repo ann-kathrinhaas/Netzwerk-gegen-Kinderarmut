@@ -2,11 +2,29 @@ $(document).ready(function () {
     scrollToAnchor();       // Scrollen zu Ankern
     setNavItemActive();     // Setzt den aktiven Navigationspunkt beim Laden der Seite
     handleNavLinkClick();   // Klicks auf Navigationslinks
+    closeMobileMenu();
 
     const currentPath = window.location.pathname.split("/").pop();
     if (currentPath !== "culture.html") {
         $(window).scroll(updateNavOnScroll).scroll();
     }
+
+    function toggleMobileMenu(mobileNavWrapper) {
+        $(mobileNavWrapper).toggleClass("collapsed");
+        $("body").toggleClass("overflow-hidden");
+    }
+
+    $(".js-mobile-menu").on("click", function () {
+        const isOpen = $(this).children(".burger-line").hasClass("animate");
+        $(this).children(".burger-line").toggleClass("animate");
+        toggleMobileMenu($(".mobile-nav-wrapper"));
+
+        if (isOpen) {
+            $(this).removeClass("no-background");
+        } else {
+            $(this).addClass("no-background");
+        }
+    });
 });
 
 function scrollToAnchor() {
@@ -62,7 +80,7 @@ function setNavItemActive() {
 
     updateActiveClass();
 
-    $(window).on('hashchange', function() {
+    $(window).on('hashchange', function () {
         updateActiveClass();
     });
 }
@@ -77,12 +95,23 @@ function handleNavLinkClick() {
 function updateNavOnScroll() { // Aktualisiert den aktiven Navigationspunkt basierend auf der Scroll-Position
     var scrollDistance = $(window).scrollTop();
 
-    $('.module-wrapper').each(function(i) {
+    $('.module-wrapper').each(function (i) {
         if ($(this).position().top <= scrollDistance) {
             $('.nav-item.active').removeClass('active');
             $('.nav-item').eq(i).addClass('active');
         }
     });
+}
+
+function closeMobileMenu() {
+    $(".js-nav-item").on("click", function () {
+        if ($("body").hasClass("overflow-hidden")) {
+            $("body").removeClass("overflow-hidden");
+            $(".mobile-nav-wrapper").addClass("collapsed");
+            $(".js-mobile-menu").children(".burger-line").removeClass("animate");
+            $(".js-mobile-menu").removeClass("no-background");
+        }
+    })
 }
 
 $(document).ready(function () {
@@ -92,4 +121,5 @@ $(document).ready(function () {
         arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1
-    })})
+    })
+})

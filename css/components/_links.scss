@@ -8,3 +8,23 @@ a {
         cursor: pointer;
     }
 }
+
+.footer-home {
+    a {
+        color: rgba($purple, 0.5);
+
+        &:hover {
+            color: $purple;
+        }
+    }
+}
+
+.footer-culture {
+    a {
+        color: rgba($blue, 0.5);
+
+        &:hover {
+            color: $blue;
+        }
+    }
+}

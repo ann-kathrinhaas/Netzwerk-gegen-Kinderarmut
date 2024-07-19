@@ -1,13 +1,27 @@
 .module-wrapper {
     &.header {
         width: 100vw;
+        min-height: 40vh;
         margin: 0 auto;
-        background: url("https://ann-kathrinhaas.github.io/Netzwerk-gegen-Kinderarmut/assets/images/img_header-home.png") no-repeat fixed center;
-        background-size: cover;
+
+        .header-img {
+            width: 100vw;
+        }
 
         .module {
             width: 80vw;
-            padding: 18rem 0 8rem 7rem;
+            padding: 18rem 0 8rem 0;
+
+            &.header-text {
+                position: relative;
+                bottom: 48rem;
+                margin-bottom: -49rem;
+                color: $white;
+
+                .sub-heading {
+                    width: 50%;
+                }
+            }
 
             &.stoerer {
                 background: $purple-gradient;
@@ -24,6 +38,31 @@
 
             .sub-heading {
                 width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .module-wrapper {
+        &.header {
+            .module {
+                padding-top: 24rem;
+
+                &.header-text {
+                    // margin-bottom: -39.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .module-wrapper {
+        &.header {
+            .header-img {
+                height: 40rem;
+                object-fit: cover;
             }
         }
     }

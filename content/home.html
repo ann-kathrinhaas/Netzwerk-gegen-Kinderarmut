@@ -7,36 +7,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netzwerk gegen Kinderarmut</title>
   <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
-  <nav class="navigation">
+  <div class="navigation-wrapper show-on-mobile">
+    <div class="burger-menu js-mobile-menu">
+      <div class="burger-line">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navigation-wrapper mobile-nav-wrapper collapsed">
     <div class="navbar">
-      <div class="js-nav-item active nav-item">
+      <div class="js-nav-item active nav-item icon-with-nav-item">
+        <img class="nav-icon" src="../assets/icons/ic_home.svg" alt="Home"
+          title="Home">
         <a class="purple" href="#home" alt="Home" title="Home">Home</a>
         <span class="purple-line"></span>
       </div>
-      <div class="js-nav-item nav-item">
+      <div class="js-nav-item nav-item icon-with-nav-item">
+        <img class="nav-icon" src="../assets/icons/ic_hilfe-und-beratung.svg" alt="Hilfe & Beratung"
+          title="Hilfe & Beratung">
         <a class="pink" href="#hilfeUndBeratung" alt="Hilfe & Beratung" title="Hilfe & Beratung">Hilfe & Beratung</a>
         <span class="pink-line"></span>
       </div>
-      <div class="js-nav-item nav-item">
+      <div class="js-nav-item nav-item icon-with-nav-item">
+        <img class="nav-icon" src="../assets/icons/ic_essen.svg" alt="Essen"
+          title="Essen">
         <a class="orange" href="#essen" alt="Essen" title="Essen">Essen</a>
         <span class="orange-line"></span>
       </div>
-      <div class="js-nav-item nav-item">
+      <div class="js-nav-item nav-item icon-with-nav-item">
+        <img class="nav-icon" src="../assets/icons/ic_freizeit.svg" alt="Freizeit"
+          title="Freizeit">
         <a class="blue" href="#freizeit" alt="Freizeit" title="Freizeit">Freizeit</a>
         <span class="blue-line"></span>
       </div>
-      <div class="js-nav-item nav-item">
+      <div class="js-nav-item nav-item icon-with-nav-item">
+        <img class="nav-icon" src="../assets/icons/ic_kleidung.svg" alt="Kleidung"
+          title="Kleidung">
         <a class="green" href="#kleidung" alt="Kleidung" title="Kleidung">Kleidung</a>
         <span class="green-line"></span>
       </div>
     </div>
   </nav>
 
-  <div class="module-wrapper header" id="home">
+  <div class="module-wrapper header">
+    <img class="header-img" alt="" title="" src="../assets/images/img_header-home.png">
+    <div class="module header-text">
+      <h1 class="bold">Zukunft gestalten,<br>Möglichkeiten nutzen.<br>Gemeinsam voran!</h1>
+      <p class="sub-heading">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+        consequuntur magni dolores.</p>
+    </div>
+    <img class="wave header-wave" src="../assets/waves/wave-purple.png">
+    <div class="module stoerer stoerer-header">
+      <h4 class="center stoerer-header-text">Hier geht es weiter zu den verschiedenen Kategorien</h4>
+    </div>
+  </div>
+
+  <!-- <div class="module-wrapper header header-home" id="home">
     <div class="module">
       <div class="text-wrapper">
         <h1 class="bold">Zukunft gestalten,<br>Möglichkeiten nutzen.<br>Gemeinsam voran!</h1>
@@ -47,25 +80,27 @@
     <div class="module stoerer">
       <h4 class="center">Hier geht es weiter zu den verschiedenen Kategorien</h2>
     </div>
-  </div>
+  </div> -->
 
-  <div class="module-wrapper hilfe-und-beratung">
+  <div class="module-wrapper hilfe-und-beratung" id="hilfeUndBeratung">
     <div class="module stoerer">
       <div class="flex-module items">
-        <div item>
-          <img src="../assets/stoerer/hilfe-und-beratung/caritas.svg" alt="Caritas" title="Caritas">
+        <div class="item">
+          <img src="../assets/stoerer/hilfe-und-beratung/documents.svg" alt="Dokumente" title="Dokumente">
         </div>
-        <div item>
-          <img src="../assets/stoerer/hilfe-und-beratung/arbeitsagentur.svg" alt="Arbeitsagentur" title="Arbeitsagentur">
+        <div class="item">
+          <img src="../assets/stoerer/hilfe-und-beratung/telephone.svg" alt="Telefon"
+            title="Telefon">
         </div>
-        <div item>
-          <img src="../assets/stoerer/hilfe-und-beratung/jugendamt.svg" alt="Jugendamt" title="Jugendamt">
+        <div class="item">
+          <img src="../assets/stoerer/hilfe-und-beratung/speech-bubbles.svg" alt="Sprechblasen" title="Sprechblasen">
         </div>
       </div>
     </div>
     <div class="module content">
       <div class="flex-module icon-with-heading">
-        <img class="icon" src="../assets/icons/ic_hilfe-und-beratung.svg" alt="Hilfe & Beratung" title="Hilfe & Beratung">
+        <img class="icon" src="../assets/icons/ic_hilfe-und-beratung.svg" alt="Hilfe & Beratung"
+          title="Hilfe & Beratung">
         <h2 class="heading-with-line bold">Hilfe & Beratung<div class="line line-hilfe-und-beratung"></div>
         </h2>
       </div>
@@ -84,7 +119,8 @@
               <h4>Caritas</h4>
               <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                 dolores eos qui ratione voluptatem.</p>
-              <a href="https://www.caritas.de/hilfeundberatung/hilfeundberatung" alt="Mehr erfahren" title="Mehr erfahren"><button class="semibold btn btn-pink">Mehr erfahren</button></a>
+              <a href="https://www.caritas.de/hilfeundberatung/hilfeundberatung" alt="Mehr erfahren"
+                title="Mehr erfahren"><button class="semibold btn btn-pink">Mehr erfahren</button></a>
             </div>
           </div>
         </div>
@@ -97,7 +133,8 @@
               <h4>Arbeitsagentur</h4>
               <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                 dolores eos qui ratione voluptatem.</p>
-              <a href="" alt="Mehr erfahren" title="Mehr erfahren"><button class="semibold btn btn-pink">Mehr erfahren</button></a>
+              <a href="" alt="Mehr erfahren" title="Mehr erfahren"><button class="semibold btn btn-pink">Mehr
+                  erfahren</button></a>
             </div>
           </div>
         </div>
@@ -110,7 +147,8 @@
               <h4>Jugendamt</h4>
               <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                 dolores eos qui ratione voluptatem.</p>
-              <a href="" alt="Mehr erfahren" title="Mehr erfahren"><button class="semibold btn btn-pink">Mehr erfahren</button></a>
+              <a href="" alt="Mehr erfahren" title="Mehr erfahren"><button class="semibold btn btn-pink">Mehr
+                  erfahren</button></a>
             </div>
           </div>
         </div>
@@ -193,7 +231,7 @@
           <div class="line-marker"></div>
           <h4 class="bold">Kultur</h4>
         </div>
-        <a class="flex-module alle-angebote" href="/content/culture.html" title="Alle Angebote ansehen – Kultur">
+        <a class="flex-module alle-angebote" href="../content/culture.html" title="Alle Angebote ansehen – Kultur">
           <p class="blue semibold">Alle Angebote ansehen</p>
           <img class="arrow-icon" src="../assets/icons/ic_arrow-right.svg" alt="Alle Angebote ansehen"
             title="Alle Angebote ansehen">
@@ -246,13 +284,15 @@
     </div>
   </div>
 
+  <img class="wave footer-wave" src="../assets/waves/wave-purple.png">
+
   <footer>
-    <div class="module-wrapper footer">
+    <div class="module-wrapper footer footer-home">
       <div class="module">
         <div class="flex-module">
           <h5>Lorem impsum</h5>
           <a href="" alt="Instagram" title="Instagram"><img class="instagram-icon"
-              src="../assets/icons/ic_instagram.svg"></a>
+              src="../assets/icons/ic_instagram-purple.svg"></a>
           <a href="" alt="Datenschutz" title="Datenschutz">Datenschutz</a>
           <a href="" alt="Impressum" title="Impressum">Impressum</a>
           <p>© 2024 Netzwerk gegen Kinderarmut</p>

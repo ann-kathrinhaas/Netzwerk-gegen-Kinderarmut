@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,129 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="../js/script.js" defer></script>
 </head>
-<body class="c">
+
+<body class="culture">
+    <div class="navigation-wrapper show-on-mobile">
+        <div class="burger-menu js-mobile-menu">
+          <div class="burger-line">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+        </div>
+      </div>
+    
+      <nav class="navigation-wrapper mobile-nav-wrapper collapsed">
+        <div class="navbar">
+          <div class="js-nav-item active nav-item icon-with-nav-item">
+            <img class="nav-icon" src="../assets/icons/ic_home.svg" alt="Home"
+              title="Home">
+            <a class="purple" href="#home" alt="Home" title="Home">Home</a>
+            <span class="purple-line"></span>
+          </div>
+          <div class="js-nav-item nav-item icon-with-nav-item">
+            <img class="nav-icon" src="../assets/icons/ic_hilfe-und-beratung.svg" alt="Hilfe & Beratung"
+              title="Hilfe & Beratung">
+            <a class="pink" href="#hilfeUndBeratung" alt="Hilfe & Beratung" title="Hilfe & Beratung">Hilfe & Beratung</a>
+            <span class="pink-line"></span>
+          </div>
+          <div class="js-nav-item nav-item icon-with-nav-item">
+            <img class="nav-icon" src="../assets/icons/ic_essen.svg" alt="Essen"
+              title="Essen">
+            <a class="orange" href="#essen" alt="Essen" title="Essen">Essen</a>
+            <span class="orange-line"></span>
+          </div>
+          <div class="js-nav-item nav-item icon-with-nav-item">
+            <img class="nav-icon" src="../assets/icons/ic_freizeit.svg" alt="Freizeit"
+              title="Freizeit">
+            <a class="blue" href="#freizeit" alt="Freizeit" title="Freizeit">Freizeit</a>
+            <span class="blue-line"></span>
+          </div>
+          <div class="js-nav-item nav-item icon-with-nav-item">
+            <img class="nav-icon" src="../assets/icons/ic_kleidung.svg" alt="Kleidung"
+              title="Kleidung">
+            <a class="green" href="#kleidung" alt="Kleidung" title="Kleidung">Kleidung</a>
+            <span class="green-line"></span>
+          </div>
+        </div>
+      </nav>
+
+    <div class="module-wrapper header">
+        <img class="header-img" alt="Kultur" title="Kultur" src="../assets/images/img_header-kultur.png">
+        <img class="wave header-wave" src="../assets/waves/wave-blue.png">
+    </div>
+
     <div class="module-wrapper">
         <div class="module">
-            <div class="flex-module">
-                
+            <div class="flex-module icon-with-heading">
+                <img class="icon" src="../assets/icons/ic_theater.svg" alt="Kultur" title="Kultur">
+                <h1 class="heading-with-line bold">Kultur<div class="line line-freizeit"></div>
+                </h1>
+            </div>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem.
+            </p>
+        </div>
+    </div>
+
+    <div class="module-wrapper">
+        <div class="module">
+            <div class="kultur">
+                <div class="flex-module heading-with-marker">
+                    <div class="line-marker"></div>
+                    <h2 class="bold">Theater</h2>
+                </div>
+                <div class="slider-placeholder"
+                    style="width: 100%; height: 200px; background-color: rgb(187, 187, 187);"></div>
             </div>
         </div>
     </div>
+
+    <div class="module-wrapper">
+        <div class="module">
+            <div class="kultur">
+                <div class="flex-module heading-with-marker">
+                    <div class="line-marker"></div>
+                    <h2 class="bold">Konzerte</h2>
+                </div>
+                <div class="slider-placeholder"
+                    style="width: 100%; height: 200px; background-color: rgb(187, 187, 187);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-wrapper">
+        <div class="module">
+            <div class="kultur">
+                <div class="flex-module heading-with-marker">
+                    <div class="line-marker"></div>
+                    <h2 class="bold">Veranstaltungen</h2>
+                </div>
+                <div class="slider-placeholder"
+                    style="width: 100%; height: 200px; background-color: rgb(187, 187, 187);"></div>
+            </div>
+        </div>
+    </div>
+
+    <img class="wave footer-wave" src="../assets/waves/wave-blue.png">
+
+    <footer>
+        <div class="module-wrapper footer footer-culture">
+          <div class="module">
+            <div class="flex-module">
+              <h5>Lorem impsum</h5>
+              <a href="" alt="Instagram" title="Instagram"><img class="instagram-icon"
+                  src="../assets/icons/ic_instagram-blue.svg"></a>
+              <a href="" alt="Datenschutz" title="Datenschutz">Datenschutz</a>
+              <a href="" alt="Impressum" title="Impressum">Impressum</a>
+              <p>© 2024 Netzwerk gegen Kinderarmut</p>
+            </div>
+          </div>
+        </div>
+      </footer>
 </body>
+
 </html>

@@ -247,17 +247,36 @@ p {
   font-size: 1rem;
   background: none;
   margin-top: 10%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid transparent;
+  transition: color 0.4s ease, border-color 0.4s ease;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ff7388;
+  transition: left 0.4s ease;
+  z-index: -1;
 }
 .btn.btn-pink {
   color: #ff7388;
   border: 2px solid #ff7388;
 }
 .btn.btn-pink:hover {
-  background: #ff7388;
+  color: #ffffff;
+  border-color: #ff7388;
+}
+.btn.btn-pink:hover::before {
+  left: 0;
 }
 .btn:hover {
   cursor: pointer;
-  color: #ffffff;
 }
 
 a {

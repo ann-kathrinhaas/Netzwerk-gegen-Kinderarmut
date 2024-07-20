@@ -3,7 +3,7 @@
     border-radius: 7px;
     font-size: 1rem;
     background: none;
-    margin-top: 10%;
+    margin-top: 1rem;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -82,7 +82,7 @@
         }
 
         &::before {
-            background: $green-gradient;
+            background: $green;
         }
     }
 

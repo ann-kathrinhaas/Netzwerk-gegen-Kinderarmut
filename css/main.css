@@ -31,6 +31,9 @@ body {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 body .module-wrapper {
   width: 70vw;
   margin: 10rem auto;
@@ -95,7 +98,7 @@ body .module-wrapper .module.stoerer-header {
   body .module-wrapper .module.stoerer.stoerer-header {
     padding: 0;
     margin-bottom: 7rem;
-    z-index: 1;
+    z-index: 0;
   }
 }
 
@@ -381,7 +384,7 @@ a:hover {
 }
 @media (max-width: 480px) {
   .wave.header-wave {
-    z-index: 2;
+    z-index: 1;
   }
   .wave.mobile-wave {
     display: block;
@@ -475,7 +478,7 @@ a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  width: 10vw;
+  width: 12vw;
   z-index: 1;
 }
 .navigation-wrapper .navbar {
@@ -614,6 +617,9 @@ a:hover {
   }
   .navigation-wrapper .burger-menu.no-background {
     background: none;
+  }
+  .navigation-wrapper .burger-menu.no-scroll {
+    overflow: hidden;
   }
   .navigation-wrapper .burger-menu .burger-line .line {
     width: 27px;

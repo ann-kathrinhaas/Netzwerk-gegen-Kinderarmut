@@ -21,8 +21,10 @@ $(document).ready(function () {
 
         if (isOpen) {
             $(this).removeClass("no-background");
+            $("body").removeClass("no-scroll");
         } else {
             $(this).addClass("no-background");
+            $("body").addClass("no-scroll");
         }
     });
 });

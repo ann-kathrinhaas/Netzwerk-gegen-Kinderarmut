@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 10vw;
+    width: 12vw;
     z-index: 1;
 
     .navbar {
@@ -177,6 +177,10 @@
 
             &.no-background {
                 background: none;
+            }
+
+            &.no-scroll {
+                overflow: hidden;
             }
 
             .burger-line {

@@ -5,6 +5,10 @@ body {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 
+    &.no-scroll {
+        overflow: hidden;
+    }
+
     .module-wrapper {
         width: 70vw;
         margin: 10rem auto;
@@ -75,6 +79,26 @@ body {
             .module {
                 &.stoerer-header {
                     margin-top: 0rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .module-wrapper {
+            .module {
+                &.content, &.stoerer {
+                    padding: 2.5rem 2rem;
+                }
+
+                &.stoerer {
+                    margin: -5px 0 0 0;
+
+                    &.stoerer-header {
+                        padding: 0;
+                        margin-bottom: 7rem;
+                        z-index: 0;
+                    }
                 }
             }
         }

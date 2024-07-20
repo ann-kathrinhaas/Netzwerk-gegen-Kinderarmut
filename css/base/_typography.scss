@@ -134,3 +134,27 @@ p {
         }
     }
 }
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .icon-with-heading {
+        gap: 0.5rem;
+        white-space: nowrap;
+
+        .icon {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+}

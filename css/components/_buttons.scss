@@ -11,15 +11,27 @@
     transition: color 0.4s ease, border-color 0.4s ease;
 
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: -100%;
         width: 100%;
         height: 100%;
-        background-color: $pink;
         transition: left 0.4s ease;
         z-index: -1;
+    }
+
+    &.btn-pink,
+    &.btn-orange,
+    &.btn-blue,
+    &.btn-green {
+        &:hover {
+            color: $white;
+
+            &::before {
+                left: 0;
+            }
+        }
     }
 
     &.btn-pink {
@@ -27,12 +39,50 @@
         border: 2px solid $pink;
 
         &:hover {
-            color: $white;
             border-color: $pink;
+        }
 
-            &::before {
-                left: 0;
-            }
+        &::before {
+            background: $pink;
+        }
+    }
+
+    &.btn-orange {
+        color: $orange;
+        border: 2px solid $orange;
+
+        &:hover {
+            border-color: $orange;
+        }
+
+        &::before {
+            background: $orange;
+        }
+    }
+
+    &.btn-blue {
+        color: $blue;
+        border: 2px solid $blue;
+
+        &:hover {
+            border-color: $blue;
+        }
+
+        &::before {
+            background: $blue;
+        }
+    }
+
+    &.btn-green {
+        color: $green;
+        border: 2px solid $green;
+
+        &:hover {
+            border-color: $green;
+        }
+
+        &::before {
+            background: $green-gradient;
         }
     }
 

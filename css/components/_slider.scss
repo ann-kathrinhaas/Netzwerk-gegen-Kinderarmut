@@ -318,21 +318,23 @@
             .flex-module {
                 .slider-img {
                     height: 8rem;
-                    width: 100vw;
+                    // width: 100vw;
 
                     .color-overlay {
-                        top: -18rem;
+                        top: -8rem;
                         height: 8rem;
                     }
                 }
 
                 .slider-content {
-                    width: 60%;
+                    // width: 60%;
                 }
             }
         }
     }
 }
+
+
 
 // @media (min-width: 1400px) {
 //     .slider {

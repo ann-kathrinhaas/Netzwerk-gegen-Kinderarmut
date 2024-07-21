@@ -562,14 +562,10 @@ a:hover {
 @media (max-width: 480px) {
   .slider .slider-item .flex-module .slider-img {
     height: 8rem;
-    width: 100vw;
   }
   .slider .slider-item .flex-module .slider-img .color-overlay {
-    top: -18rem;
+    top: -8rem;
     height: 8rem;
-  }
-  .slider .slider-item .flex-module .slider-content {
-    width: 60%;
   }
 }
 .wave {
@@ -921,6 +917,9 @@ a:hover {
 .module-wrapper .module.stoerer {
   height: auto;
 }
+.module-wrapper .module.show-on-mobile {
+  display: none;
+}
 .module-wrapper .module .flex-module.items {
   justify-content: space-around;
   height: 7rem;
@@ -976,16 +975,18 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
-  .module-wrapper.hilfe-und-beratung, .module-wrapper.essen, .module-wrapper.freizeit, .module-wrapper.kleidung {
-    display: flex;
-    flex-direction: column;
-  }
   .module-wrapper.hilfe-und-beratung .order-1-on-mobile, .module-wrapper.essen .order-1-on-mobile, .module-wrapper.freizeit .order-1-on-mobile, .module-wrapper.kleidung .order-1-on-mobile {
     order: 1;
     z-index: -1;
   }
   .module-wrapper.hilfe-und-beratung .order-2-on-mobile, .module-wrapper.essen .order-2-on-mobile, .module-wrapper.freizeit .order-2-on-mobile, .module-wrapper.kleidung .order-2-on-mobile {
     order: 2;
+  }
+  .module-wrapper.hilfe-und-beratung .show-on-mobile, .module-wrapper.essen .show-on-mobile, .module-wrapper.freizeit .show-on-mobile, .module-wrapper.kleidung .show-on-mobile {
+    display: block;
+  }
+  .module-wrapper.hilfe-und-beratung .hide-on-mobile, .module-wrapper.essen .hide-on-mobile, .module-wrapper.freizeit .hide-on-mobile, .module-wrapper.kleidung .hide-on-mobile {
+    display: none;
   }
   .module-wrapper.hilfe-und-beratung .stoerer {
     background: #f07a83;

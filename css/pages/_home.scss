@@ -49,6 +49,10 @@
             height: auto;
         }
 
+        &.show-on-mobile {
+            display: none;
+        }
+
         .flex-module {
             &.items {
                 justify-content: space-around;
@@ -129,8 +133,8 @@
         &.essen,
         &.freizeit,
         &.kleidung {
-            display: flex;
-            flex-direction: column;
+            // display: flex;
+            // flex-direction: column;
 
             .order-1-on-mobile {
                 order: 1;
@@ -139,6 +143,14 @@
 
             .order-2-on-mobile {
                 order: 2;
+            }
+
+            .show-on-mobile {
+                display: block;
+            }
+
+            .hide-on-mobile {
+                display: none;
             }
         }
 

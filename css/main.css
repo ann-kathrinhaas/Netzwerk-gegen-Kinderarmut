@@ -540,7 +540,7 @@ a:hover {
   }
   .slick-next,
 .slick-prev {
-    top: calc(50% + 4rem);
+    top: calc(50% + 7rem);
   }
 }
 @media (max-width: 680px) {
@@ -554,6 +554,9 @@ a:hover {
   .slider .slider-item .flex-module .slider-content {
     width: 65%;
   }
+  .slick-dots li {
+    width: 2.5rem;
+  }
   .slick-next,
 .slick-prev {
     top: calc(50% + 5rem);
@@ -566,6 +569,10 @@ a:hover {
   .slider .slider-item .flex-module .slider-img .color-overlay {
     top: -8rem;
     height: 8rem;
+  }
+  .slick-next,
+.slick-prev {
+    top: calc(50% + 4rem);
   }
 }
 .wave {
@@ -745,6 +752,10 @@ a:hover {
   font-size: 1rem;
   display: block;
 }
+.navigation-wrapper .navbar .nav-item a.small {
+  padding-left: 1rem;
+  font-size: 0.875rem !important;
+}
 .navigation-wrapper .navbar .nav-item a.purple {
   color: #9367cc;
 }
@@ -798,6 +809,11 @@ a:hover {
     gap: 1rem;
     align-items: center;
   }
+  .navigation-wrapper .navbar .nav-item .smaller-items {
+    position: absolute;
+    left: 4rem;
+    top: 3rem;
+  }
   .navigation-wrapper .navbar .nav-item .nav-icon {
     display: block;
     width: 2.5rem;
@@ -806,8 +822,19 @@ a:hover {
   .navigation-wrapper .navbar .nav-item a {
     font-size: 1.5rem;
   }
+  .navigation-wrapper .navbar .nav-item a.small {
+    font-size: 1.25rem !important;
+  }
   .navigation-wrapper .navbar .nav-item span {
     height: 3px;
+  }
+  .navigation-wrapper .navbar .nav-item span.subpage {
+    position: absolute;
+    top: 9rem;
+  }
+  .navigation-wrapper .navbar .nav-item.last-item {
+    position: relative;
+    top: 6rem;
   }
   .navigation-wrapper.mobile-nav-wrapper {
     position: fixed;
@@ -883,8 +910,15 @@ a:hover {
   .navigation-wrapper .navbar .nav-item a {
     font-size: 1.25rem;
   }
+  .navigation-wrapper .navbar .nav-item a.small {
+    font-size: 1rem !important;
+    padding-left: 1rem;
+  }
   .navigation-wrapper .navbar .nav-item span {
     height: 2px;
+  }
+  .navigation-wrapper .navbar .nav-item span.subpage {
+    top: 8rem;
   }
 }
 .module-wrapper.hilfe-und-beratung .stoerer {
@@ -975,13 +1009,6 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
-  .module-wrapper.hilfe-und-beratung .order-1-on-mobile, .module-wrapper.essen .order-1-on-mobile, .module-wrapper.freizeit .order-1-on-mobile, .module-wrapper.kleidung .order-1-on-mobile {
-    order: 1;
-    z-index: -1;
-  }
-  .module-wrapper.hilfe-und-beratung .order-2-on-mobile, .module-wrapper.essen .order-2-on-mobile, .module-wrapper.freizeit .order-2-on-mobile, .module-wrapper.kleidung .order-2-on-mobile {
-    order: 2;
-  }
   .module-wrapper.hilfe-und-beratung .show-on-mobile, .module-wrapper.essen .show-on-mobile, .module-wrapper.freizeit .show-on-mobile, .module-wrapper.kleidung .show-on-mobile {
     display: block;
   }

@@ -282,7 +282,7 @@
 
     .slick-next,
     .slick-prev {
-        top: calc(50% + 4rem);
+        top: calc(50% + 7rem);
     }
 }
 
@@ -306,6 +306,12 @@
         }
     }
 
+    .slick-dots {
+        li {
+            width: 2.5rem;;
+        }
+    }
+
     .slick-next,
     .slick-prev {
         top: calc(50% + 5rem);
@@ -318,19 +324,19 @@
             .flex-module {
                 .slider-img {
                     height: 8rem;
-                    // width: 100vw;
 
                     .color-overlay {
                         top: -8rem;
                         height: 8rem;
                     }
                 }
-
-                .slider-content {
-                    // width: 60%;
-                }
             }
         }
+    }
+
+    .slick-next,
+    .slick-prev {
+        top: calc(50% + 4rem);
     }
 }
 

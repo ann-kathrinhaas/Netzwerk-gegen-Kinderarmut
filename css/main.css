@@ -189,6 +189,9 @@ p {
 .icon-with-heading h1 > .line.line-kleidung, .icon-with-heading h2 > .line.line-kleidung {
   background: #34b6a2;
 }
+.icon-with-heading h1 > .line.line-purple, .icon-with-heading h2 > .line.line-purple {
+  background: #9367cc;
+}
 
 .heading-with-marker .line-marker {
   width: 0.75rem;
@@ -1043,4 +1046,21 @@ a:hover {
 }
 .culture .module {
   padding: 0 7rem !important;
+}
+
+.privacy .module-wrapper .module .flex-module.back {
+  align-items: center;
+  gap: 0.7rem;
+}
+.privacy .module-wrapper .module .flex-module.back img {
+  height: 2.5rem;
+}
+.privacy .module-wrapper .module .flex-module.back a {
+  font-size: 1.25rem;
+}
+.privacy .module-wrapper .module .flex-module.back a:hover {
+  color: #9367cc;
+}
+.privacy .module-wrapper .module .flex-module.back:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

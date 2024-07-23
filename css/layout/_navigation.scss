@@ -27,10 +27,6 @@
                 }
             }
 
-            &.smaller-item {
-                // margin-top: -1rem;
-            }
-
             .nav-icon {
                 display: none;
             }
@@ -132,6 +128,7 @@
 
                     &.small {
                         font-size: 1.25rem !important;
+                        margin-left: -1.5rem;
                     }
                 }
 
@@ -254,7 +251,7 @@
 
                     &.small {
                         font-size: 1rem !important;
-                        padding-left: 1rem;
+                        margin-left: -2rem;
                     }
                 }
 

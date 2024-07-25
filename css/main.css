@@ -38,6 +38,9 @@ body .module-wrapper {
   width: 70vw;
   margin: 10rem auto;
 }
+body .module-wrapper.first-module-wrapper {
+  margin-top: 5rem;
+}
 body .module-wrapper .module {
   max-width: 1024px;
   margin: 0 auto;
@@ -70,9 +73,6 @@ body .module-wrapper .module.stoerer-header {
 @media (max-width: 1023px) {
   body .module-wrapper {
     width: 100vw;
-  }
-  body .module-wrapper.first-module-wrapper {
-    margin-top: 5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -655,7 +655,6 @@ a:hover {
 }
 .module-wrapper.header {
   width: 100vw;
-  min-height: 40vh;
   margin: 0 auto;
 }
 .module-wrapper.header .header-img {
@@ -1080,11 +1079,13 @@ a:hover {
 .subpage .module {
   padding: 0 7rem !important;
 }
+.subpage .module-wrapper.header .header-img {
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media (max-width: 767px) {
   .subpage .module {
     padding: 0 2rem !important;
-  }
-  .subpage .module.first-module {
-    margin-top: 5rem;
   }
 }/*# sourceMappingURL=main.css.map */

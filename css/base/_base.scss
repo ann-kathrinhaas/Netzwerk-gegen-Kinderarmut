@@ -13,6 +13,10 @@ body {
         width: 70vw;
         margin: 10rem auto;
 
+        &.first-module-wrapper {
+            margin-top: 5rem;
+        }
+
         .module {
             max-width: 1024px;
             margin: 0 auto;
@@ -50,10 +54,6 @@ body {
     @media (max-width: 1023px) {
         .module-wrapper {
             width: 100vw;
-
-                &.first-module-wrapper {
-                    margin-top: 5rem;
-                }
         }
     }
 

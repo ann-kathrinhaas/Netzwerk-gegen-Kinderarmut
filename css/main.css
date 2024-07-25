@@ -1054,10 +1054,6 @@ a:hover {
 .privacy .module-wrapper.back-wrapper, .privacy .module-wrapper.privacy-content, .privacy .module-wrapper.imprint-content, .imprint .module-wrapper.back-wrapper, .imprint .module-wrapper.privacy-content, .imprint .module-wrapper.imprint-content {
   margin: 5rem auto;
 }
-.privacy .module-wrapper.imprint-content ul, .imprint .module-wrapper.imprint-content ul {
-  list-style-type: none;
-  padding-left: 0 !important;
-}
 .privacy .module-wrapper .module h2, .imprint .module-wrapper .module h2 {
   font-size: 1.5rem;
 }
@@ -1066,11 +1062,16 @@ a:hover {
 }
 .privacy .module-wrapper .module ul, .imprint .module-wrapper .module ul {
   font-family: "Source Sans 3", sans-serif;
-  padding-left: 1rem;
   margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 .privacy .module-wrapper .module ul a:hover, .imprint .module-wrapper .module ul a:hover {
   color: #9367cc;
+}
+.privacy .module-wrapper .module ul.dots, .imprint .module-wrapper .module ul.dots {
+  list-style-type: disc;
+  padding-left: 1rem;
 }
 .privacy .module-wrapper .module .flex-module.back, .imprint .module-wrapper .module .flex-module.back {
   align-items: center;

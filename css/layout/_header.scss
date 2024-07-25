@@ -1,13 +1,8 @@
 .module-wrapper {
     &.header {
         width: 100vw;
-        // min-height: 40vh;
         margin: 0 auto;
-
-        .header-img {
-            width: 100vw;
-        }
-
+        
         .module {
             width: 80vw;
             padding: 18rem 0 8rem 0;
@@ -48,10 +43,6 @@
         &.header {
             .module {
                 padding-top: 24rem;
-
-                &.header-text {
-                    // margin-bottom: -39.5rem;
-                }
             }
         }
     }

@@ -48,19 +48,6 @@ $blue-bg: #CDE9FC;
 $font-montserrat: "Montserrat", sans-serif;
 $font-source-sans: "Source Sans 3", sans-serif;
 
-/* Sizes */
-$page-max-width: 80rem; //1280px
-
-/* Media Queries */
-$t-landscape-min: 1200px;
-$t-landscape-max: 1440px;
-$t-portrait-min: 768px;
-$t-portrait-max: 1023px;
-
-$p-landscape-min: 481px;
-$p-landscape-max: 767px;
-$p-portrait-max: 480px;
-
 // Base
 @import "base/base";
 @import "base/typography";

@@ -133,18 +133,6 @@
         &.essen,
         &.freizeit,
         &.kleidung {
-            // display: flex;
-            // flex-direction: column;
-
-            .order-1-on-mobile {
-                order: 1;
-                z-index: -1;
-            }
-
-            .order-2-on-mobile {
-                order: 2;
-            }
-
             .show-on-mobile {
                 display: block;
             }

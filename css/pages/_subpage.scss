@@ -1,0 +1,17 @@
+.subpage {
+    background: $blue-bg;
+
+    .module {
+        padding: 0 7rem !important;
+    }
+
+    @media (max-width: 767px) {
+        .module {
+            padding: 0 2rem !important;
+            
+            &.first-module {
+                margin-top: 5rem;
+            }
+        }
+    }
+}

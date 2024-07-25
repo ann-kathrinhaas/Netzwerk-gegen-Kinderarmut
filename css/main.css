@@ -441,7 +441,7 @@ a:hover {
 }
 .slider-blue .slick-next:nth-of-type(2),
 .slider-blue .slick-prev:nth-of-type(2) {
-  content: url("../assets/icons/arrows/ic_arrow-right-blue.svg");
+  content: url("../assets/icons/ic_arrow-right-blue.svg");
 }
 .slider-blue .slick-dots li.slick-active {
   background-color: #42a2c4;

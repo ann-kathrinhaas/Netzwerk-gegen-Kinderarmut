@@ -623,7 +623,7 @@ a:hover {
     top: -14.5rem;
   }
   .wave.footer-wave {
-    bottom: -1.5rem;
+    bottom: -3.5rem;
   }
   .subpage .wave.header-wave {
     top: -16rem;
@@ -648,7 +648,7 @@ a:hover {
     margin-bottom: -13rem;
   }
   .wave.footer-wave {
-    bottom: 1rem;
+    bottom: -3rem;
   }
 }
 .module-wrapper.header {
@@ -1007,7 +1007,7 @@ a:hover {
 .module-wrapper .module .sport .alle-angebote:hover .arrow-icon,
 .module-wrapper .module .kultur .alle-angebote:hover .arrow-icon,
 .module-wrapper .module .veranstaltungen .alle-angebote:hover .arrow-icon {
-  content: url("https://ann-kathrinhaas.github.io/Netzwerk-gegen-Kinderarmut/assets/icons/ic_arrow-right-blue.svg") !important;
+  content: url("../assets/icons/arrows/ic_arrow-right-blue.svg");
 }
 
 @media (max-width: 767px) {
@@ -1051,23 +1051,64 @@ a:hover {
     padding-left: 0;
   }
 }
-.privacy .module-wrapper .module .flex-module.back {
+.privacy .module-wrapper.back-wrapper, .privacy .module-wrapper.privacy-content, .privacy .module-wrapper.imprint-content, .imprint .module-wrapper.back-wrapper, .imprint .module-wrapper.privacy-content, .imprint .module-wrapper.imprint-content {
+  margin: 5rem auto;
+}
+.privacy .module-wrapper.imprint-content ul, .imprint .module-wrapper.imprint-content ul {
+  list-style-type: none;
+  padding-left: 0 !important;
+}
+.privacy .module-wrapper .module h2, .imprint .module-wrapper .module h2 {
+  font-size: 1.5rem;
+}
+.privacy .module-wrapper .module h5, .imprint .module-wrapper .module h5 {
+  margin-bottom: 0;
+}
+.privacy .module-wrapper .module ul, .imprint .module-wrapper .module ul {
+  font-family: "Source Sans 3", sans-serif;
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+.privacy .module-wrapper .module ul a:hover, .imprint .module-wrapper .module ul a:hover {
+  color: #9367cc;
+}
+.privacy .module-wrapper .module .flex-module.back, .imprint .module-wrapper .module .flex-module.back {
   align-items: center;
   gap: 0.7rem;
 }
-.privacy .module-wrapper .module .flex-module.back img {
+.privacy .module-wrapper .module .flex-module.back img, .imprint .module-wrapper .module .flex-module.back img {
   height: 2.5rem;
 }
-.privacy .module-wrapper .module .flex-module.back a {
+.privacy .module-wrapper .module .flex-module.back a, .imprint .module-wrapper .module .flex-module.back a {
   font-size: 1.25rem;
 }
-.privacy .module-wrapper .module .flex-module.back a:hover {
-  color: #9367cc;
-}
-.privacy .module-wrapper .module .flex-module.back:hover {
+.privacy .module-wrapper .module .flex-module.back:hover, .imprint .module-wrapper .module .flex-module.back:hover {
   cursor: pointer;
 }
+.privacy .module-wrapper .module .flex-module.back:hover a, .imprint .module-wrapper .module .flex-module.back:hover a {
+  color: #9367cc;
+}
+.privacy .module-wrapper .module .flex-module.hide-on-mobile, .imprint .module-wrapper .module .flex-module.hide-on-mobile {
+  display: block;
+}
+.privacy .module-wrapper .module .flex-module.show-on-mobile, .imprint .module-wrapper .module .flex-module.show-on-mobile {
+  display: none;
+}
 
+@media (max-width: 480px) {
+  .module-wrapper .module .flex-module.icon-with-heading.hide-on-mobile {
+    display: none;
+  }
+  .module-wrapper .module .flex-module.icon-with-heading.show-on-mobile {
+    display: block;
+  }
+  .module-wrapper .module .flex-module.icon-with-heading.show-on-mobile .heading-with-line.first-part {
+    margin-bottom: 0;
+  }
+  .module-wrapper .module .flex-module.icon-with-heading.show-on-mobile .heading-with-line.second-part {
+    margin-top: 0;
+  }
+}
 .subpage {
   background: #CDE9FC;
 }

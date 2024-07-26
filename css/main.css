@@ -379,6 +379,12 @@ a:hover {
   gap: 1rem;
   padding-right: 2rem;
 }
+.slider .slider-item .flex-module .slider-content .location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
 .slider .slider-item .flex-module h4 {
   margin: 0;
 }

@@ -1,31 +1,31 @@
-.module-wrapper{
-  &.footer {
-    width: 100%;
-    margin: 0;
+.module-wrapper {
+    &.footer {
+        width: 100%;
+        margin: 0;
 
-    &.footer-home {
-        background: $purple-gradient;
-        color: $purple;  
-    }
-
-    &.footer-culture {
-        color: $blue;  
-    }
-
-    .flex-module {
-        flex-direction: column !important;
-        padding: 4rem 0;
-
-        h5,
-        a:last-of-type,
-        .instagram-icon {
-            margin-bottom: 2rem;
+        &.footer-home {
+            background: $purple-gradient;
+            color: $purple;
         }
 
-        .instagram-icon {
-            width: 2.5rem;
-            height: auto;
+        &.footer-culture {
+            color: $blue;
+        }
+
+        .flex-module {
+            flex-direction: column !important;
+            padding: 4rem 0;
+
+            h5,
+            a:last-of-type,
+            .instagram-icon {
+                margin-bottom: 2rem;
+            }
+
+            .instagram-icon {
+                width: 2.5rem;
+                height: auto;
+            }
         }
     }
-}  
 }

@@ -88,9 +88,6 @@ body .module-wrapper .module.stoerer-header {
   }
 }
 @media (max-width: 767px) {
-  body .module-wrapper.privacy-content, body .module-wrapper.imprint-content {
-    margin: 2rem auto;
-  }
   body .module-wrapper .module {
     padding: 0 2rem;
   }

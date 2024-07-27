@@ -20,7 +20,7 @@ body {
         .module {
             max-width: 1024px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 7rem;
 
             &.test {
                 max-width: unset;
@@ -51,9 +51,21 @@ body {
         }
     }
 
+    @media (max-width: 1200px) {
+        .module-wrapper {
+            .module {
+                padding: 0 2rem;
+            }
+        }  
+    }
+
     @media (max-width: 1023px) {
         .module-wrapper {
             width: 100vw;
+
+            .module {
+                padding: 0 7rem;
+            }
         }
     }
 
@@ -70,7 +82,12 @@ body {
 
     @media (max-width: 767px) {
         .module-wrapper {
+            &.privacy-content, &.imprint-content {
+                margin: 2rem auto;
+            }
             .module {
+                padding: 0 2rem;
+                
                 &.stoerer-header {
                     margin-top: 2rem;
                 }
@@ -91,8 +108,10 @@ body {
     @media (max-width: 480px) {
         .module-wrapper {
             .module {
+                padding: 0 1rem;
+
                 &.content, &.stoerer {
-                    padding: 2.5rem 2rem;
+                    padding: 2rem 1rem;
                 }
 
                 &.stoerer {

@@ -1,22 +1,12 @@
 .subpage {
     background: $blue-bg;
 
-    .module {
-        padding: 0 7rem !important;
-    }
-
     .module-wrapper {
         &.header {
             .header-img {
                 height: 30rem;
                 object-fit: cover;
             }
-        }
-    }
-
-    @media (max-width: 767px) {
-        .module {
-            padding: 0 2rem !important;
         }
     }
 }

@@ -71,6 +71,12 @@
                         align-self: flex-start;
                     }
 
+                    &.skateboard {
+                        img {
+                            width: 7rem;
+                        }
+                    }
+
                     img {
                         max-height: 100%;
                         max-width: 100%;
@@ -106,12 +112,34 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .module-wrapper {
+        .module {
+            &.stoerer,
+            &.content {
+                padding: 2rem 4rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .module-wrapper {
+        .module {
+            &.stoerer,
+            &.content {
+                padding: 2.5rem 7rem;
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .module-wrapper {
         .module {
             &.content,
             &.stoerer {
-                padding: 2.5rem 2rem;
+                padding: 2rem 2rem;
             }
 
             .flex-module {
@@ -121,6 +149,14 @@
                     .item {
                         height: 4rem;
                     }
+                }
+            }
+
+            .sport,
+            .kultur,
+            .veranstaltungen {
+                .alle-angebote {
+                    padding-left: 0;
                 }
             }
         }
@@ -167,15 +203,21 @@
         }
 
         .module {
+            .flex-module {
+                &.items {
+                    .item {
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+
             .sport,
             .kultur,
             .veranstaltungen {
-                .heading-with-marker {
-                    margin-left: -2rem;
-                }
-
                 .alle-angebote {
-                    padding-left: 0;
+                    padding-left: 0rem;
                 }
             }
         }

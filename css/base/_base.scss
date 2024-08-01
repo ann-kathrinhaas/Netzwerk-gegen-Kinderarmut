@@ -123,4 +123,14 @@ body {
             }
         }
     }
+
+    @media (max-width: 340px) {
+        .module-wrapper {
+            .module {
+                &.stoerer-header {
+                    top: -6rem;
+                }
+            }
+        }
+    }
 }

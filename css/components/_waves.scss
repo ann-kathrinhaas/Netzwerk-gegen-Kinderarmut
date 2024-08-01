@@ -100,3 +100,11 @@
         }
     }
 }
+
+@media (max-width: 340px) {
+    .wave {
+        &.header-wave {
+            top: -21rem;
+        }
+    }
+}

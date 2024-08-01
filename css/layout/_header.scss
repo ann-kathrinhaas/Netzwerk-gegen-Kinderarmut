@@ -78,3 +78,19 @@
         }
     }
 }
+
+@media (max-width: 340px) {
+  .module-wrapper {
+      &.header {
+          .header-img {
+              height: 75vh;
+          }
+
+          .module {
+              &.header-text {
+                  bottom: 50rem;
+              }
+          } 
+      }
+  }    
+}

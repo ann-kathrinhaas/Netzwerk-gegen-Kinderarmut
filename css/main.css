@@ -116,6 +116,11 @@ body .module-wrapper .module.stoerer-header {
     z-index: 0;
   }
 }
+@media (max-width: 340px) {
+  body .module-wrapper .module.stoerer-header {
+    top: -6rem;
+  }
+}
 
 h1,
 h2,
@@ -688,6 +693,11 @@ a:hover {
     bottom: -3rem;
   }
 }
+@media (max-width: 340px) {
+  .wave.header-wave {
+    top: -21rem;
+  }
+}
 .module-wrapper.header {
   width: 100vw;
   margin: 0 auto;
@@ -740,6 +750,14 @@ a:hover {
   }
   .module-wrapper.header .module.header-text .sub-heading {
     width: 100%;
+  }
+}
+@media (max-width: 340px) {
+  .module-wrapper.header .header-img {
+    height: 75vh;
+  }
+  .module-wrapper.header .module.header-text {
+    bottom: 50rem;
   }
 }
 .module-wrapper.footer {

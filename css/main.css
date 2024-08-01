@@ -937,8 +937,13 @@ a:hover {
     width: 27px;
     height: 3px;
     transition: 0.5s;
-    background-color: #9367cc;
     border-radius: 2px;
+  }
+  .navigation-wrapper .burger-menu .burger-line .line.purple {
+    background-color: #9367cc;
+  }
+  .navigation-wrapper .burger-menu .burger-line .line.blue {
+    background-color: #42a2c4;
   }
   .navigation-wrapper .burger-menu .burger-line .line.line-2 {
     margin: 5px 0;

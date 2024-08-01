@@ -210,8 +210,15 @@
                     width: 27px;
                     height: 3px;
                     transition: 0.5s;
-                    background-color: $purple;
                     border-radius: 2px;
+
+                    &.purple {
+                        background-color: $purple;
+                    }
+
+                    &.blue {
+                        background-color: $blue;
+                    }
 
                     &.line-2 {
                         margin: 5px 0;

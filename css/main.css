@@ -446,9 +446,15 @@ a:hover {
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
+  width: 4rem;
   height: 2.5rem;
   border: none;
   background: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -9999px;
+  overflow: hidden;
 }
 .slick-next:hover,
 .slick-prev:hover {
@@ -457,11 +463,11 @@ a:hover {
 
 .slider-pink .slick-next:nth-of-type(1),
 .slider-pink .slick-prev:nth-of-type(1) {
-  content: url("../assets/icons/arrows/ic_arrow-left-pink.svg");
+  background-image: url("../assets/icons/arrows/ic_arrow-left-pink.svg");
 }
 .slider-pink .slick-next:nth-of-type(2),
 .slider-pink .slick-prev:nth-of-type(2) {
-  content: url("../assets/icons/arrows/ic_arrow-right-pink.svg");
+  background-image: url("../assets/icons/arrows/ic_arrow-right-pink.svg");
 }
 .slider-pink .slick-dots li.slick-active {
   background-color: #ff7388;
@@ -469,11 +475,11 @@ a:hover {
 
 .slider-orange .slick-next:nth-of-type(1),
 .slider-orange .slick-prev:nth-of-type(1) {
-  content: url("../assets/icons/arrows/ic_arrow-left-orange.svg");
+  background-image: url("../assets/icons/arrows/ic_arrow-left-orange.svg");
 }
 .slider-orange .slick-next:nth-of-type(2),
 .slider-orange .slick-prev:nth-of-type(2) {
-  content: url("../assets/icons/arrows/ic_arrow-right-orange.svg");
+  background-image: url("../assets/icons/arrows/ic_arrow-right-orange.svg");
 }
 .slider-orange .slick-dots li.slick-active {
   background-color: #fea623;
@@ -481,11 +487,11 @@ a:hover {
 
 .slider-blue .slick-next:nth-of-type(1),
 .slider-blue .slick-prev:nth-of-type(1) {
-  content: url("../assets/icons/arrows/ic_arrow-left-blue.svg");
+  background-image: url("../assets/icons/arrows/ic_arrow-left-blue.svg");
 }
 .slider-blue .slick-next:nth-of-type(2),
 .slider-blue .slick-prev:nth-of-type(2) {
-  content: url("../assets/icons/arrows/ic_arrow-right-blue.svg");
+  background-image: url("../assets/icons/arrows/ic_arrow-right-blue.svg");
 }
 .slider-blue .slick-dots li.slick-active {
   background-color: #42a2c4;
@@ -493,11 +499,11 @@ a:hover {
 
 .slider-green .slick-next:nth-of-type(1),
 .slider-green .slick-prev:nth-of-type(1) {
-  content: url("../assets/icons/arrows/ic_arrow-left-green.svg");
+  background-image: url("../assets/icons/arrows/ic_arrow-left-green.svg");
 }
 .slider-green .slick-next:nth-of-type(2),
 .slider-green .slick-prev:nth-of-type(2) {
-  content: url("../assets/icons/arrows/ic_arrow-right-green.svg");
+  background-image: url("../assets/icons/arrows/ic_arrow-right-green.svg");
 }
 .slider-green .slick-dots li.slick-active {
   background-color: #34b6a2;
